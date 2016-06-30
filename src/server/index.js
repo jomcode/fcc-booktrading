@@ -2,9 +2,19 @@
 process.on('unhandledRejection', (reason, p) => {
   console.log('Unhandled Rejection at: Promise ', p, ' reason: ', reason);
 });
+const mongoose = require('mongoose');
 
 const app = require('./app');
 const port = app.get('port');
+
+mongoose.Promise = global.Promise;
+
+mongoose.connect(app.get('mongodb'), (err, res) => {
+  if (err) {
+    return console.error(err);
+  }
+  return console.log('mongoose connected');
+});
 
 const server = app.listen(port);
 
