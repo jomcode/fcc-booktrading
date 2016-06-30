@@ -1,0 +1,866 @@
+{
+ "items": [
+  {
+   "id": "vLRNRebXuKYC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/vLRNRebXuKYC",
+   "volumeInfo": {
+    "title": "A First Look at Graph Theory",
+    "authors": [
+     "John Clark",
+     "Derek Allan Holton"
+    ],
+    "publisher": "World Scientific",
+    "publishedDate": "1991-01-01",
+    "description": "This book is intended to be an introductory text for mathematics and computer science students at the second and third year levels in universities. It gives an introduction to the subject with sufficient theory for students at those levels, with emphasis on algorithms and applications.",
+    "pageCount": 330,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=vLRNRebXuKYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=vLRNRebXuKYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "aR2TMYQr2CMC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/aR2TMYQr2CMC",
+   "volumeInfo": {
+    "title": "Graph Theory",
+    "authors": [
+     "Reinhard Diestel"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2006-01",
+    "description": "The third edition of this standard textbook of modern graph theory has been carefully revised, updated, and substantially extended. Covering all its major recent developments it can be used both as a reliable textbook for an introductory course and as a graduate text: on each topic it covers all the basic material in full detail, and adds one or two deeper results (again with detailed proofs) to illustrate the more advanced methods of that field. From the reviews of the first two editions (1997, 2000): \"This outstanding book cannot be substituted with any other book on the present textbook market. It has every chance of becoming the standard textbook for graph theory.\" Acta Scientiarum Mathematiciarum \"The book has received a very enthusiastic reception, which it amply deserves. A masterly elucidation of modern graph theory.\" Bulletin of the Institute of Combinatorics and its Applications \"A highlight of the book is what is by far the best account in print of the Seymour-Robertson theory of graph minors.\" Mathematika \". . . like listening to someone explain mathematics.\" Bulletin of the AMS",
+    "pageCount": 410,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=aR2TMYQr2CMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=aR2TMYQr2CMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "dNe7GktaOF4C",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/dNe7GktaOF4C",
+   "volumeInfo": {
+    "title": "Graph Design for the Eye and Mind",
+    "authors": [
+     "Stephen M. Kosslyn"
+    ],
+    "publisher": "Oxford University Press",
+    "publishedDate": "2006-08-10",
+    "description": "Graphs have become a fixture of everyday life, used in scientific and business publications, in magazines and newspapers, on television, on billboards, and even on cereal boxes. Nonetheless, surprisingly few graphs communicate effectively, and most graphs fail because they do not take into account the goals, needs, and abilities of the viewers. In raph Design for Eye and Mind, Stephen Kosslyn addresses these problems by presenting eight psychological principles for constructing effective graphs. Each principle is solidly rooted both in the scientific literature on how we perceive and comprehend graphs and in general facts about how our eyes and brains process visual information. Graph Design for Eye and Mind is an invaluable reference for anyone who uses visual displays to convey information in the sciences, humanities, and businesses such as finance, marketing, and advertising.",
+    "pageCount": 304,
+    "categories": [
+     "Psychology"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=dNe7GktaOF4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=dNe7GktaOF4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "fokbCAAAQBAJ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/fokbCAAAQBAJ",
+   "volumeInfo": {
+    "title": "Graph Colorings",
+    "authors": [
+     "Marek Kubale"
+    ],
+    "publisher": "American Mathematical Soc.",
+    "publishedDate": "2004",
+    "description": "This book is devoted to problems in graph coloring, which can be viewed as one area of discrete optimization. Chapters are dedicated to various models and are largely independent of one another. In each chapter, the author highlights algorithmic aspects of the presented models, i.e., the construction of polynomial-time algorithms for graph coloring. This is an expanded and updated translation of the prizewinning book originally published in Polish, Optymalizacja dyskretna. Modele i metody kolorowania grafow. It is suitable for graduate students and researchers interested in graph theory.",
+    "pageCount": 208,
+    "categories": [
+     "Science"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=fokbCAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=fokbCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "HS9iDhAuFuUC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/HS9iDhAuFuUC",
+   "volumeInfo": {
+    "title": "A Textbook of Graph Theory",
+    "authors": [
+     "R. Balakrishnan",
+     "K. Ranganathan"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2012-09-20",
+    "description": "In its second edition, expanded with new chapters on domination in graphs and on the spectral properties of graphs, this book offers a solid background in the basics of graph theory. Introduces such topics as Dirac's theorem on k-connected graphs and more.",
+    "pageCount": 292,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=HS9iDhAuFuUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=HS9iDhAuFuUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "bHGy0_H0g8QC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/bHGy0_H0g8QC",
+   "volumeInfo": {
+    "title": "Mining Graph Data",
+    "authors": [
+     "Diane J. Cook",
+     "Lawrence B. Holder"
+    ],
+    "publisher": "John Wiley & Sons",
+    "publishedDate": "2006-12-18",
+    "pageCount": 434,
+    "categories": [
+     "Technology & Engineering"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=bHGy0_H0g8QC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=bHGy0_H0g8QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "CYu7e-yap48C",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/CYu7e-yap48C",
+   "volumeInfo": {
+    "title": "Graph Theory",
+    "subtitle": "Flows, Matrices",
+    "authors": [
+     "B Andrasfai"
+    ],
+    "publisher": "CRC Press",
+    "publishedDate": "1991-01-01",
+    "description": "Graph Theory: Flows, Matrices covers a number of topics in graph theory that are important in the major areas of application. It provides graph theoretic tools that can be readily and efficiently applied to problems in operational research, computer science, electrical engineering, and economics. Emphasizing didactic principles, the book derives theorems and proofs from a detailed analysis of the structure of graphs. The easy-to-follow algorithms can be readily converted to computer codes in high-level programming languages. Requiring knowledge of the basic concepts of graph theory and a familiarity with some simple results, the book also includes 100 exercises with solutions to help readers gain experience and 131 diagrams to aid in the understanding of concepts and proofs.",
+    "pageCount": 280,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=CYu7e-yap48C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=CYu7e-yap48C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "1Nl4BpacvpwC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/1Nl4BpacvpwC",
+   "volumeInfo": {
+    "title": "Planar Graphs",
+    "subtitle": "Theory and Algorithms",
+    "authors": [
+     "Takao Nishizeki",
+     "Norishige Chiba"
+    ],
+    "publisher": "Courier Corporation",
+    "publishedDate": "2008",
+    "description": "This text features most of the important theorems and algorithms for planar graphs. Suitable as a textbook, it is also useful for researchers and includes an extensive reference section. 1988 edition.",
+    "pageCount": 232,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=1Nl4BpacvpwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=1Nl4BpacvpwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "RrtXSKMAmWgC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/RrtXSKMAmWgC",
+   "volumeInfo": {
+    "title": "Efficient Graph Representations.",
+    "subtitle": "The Fields Institute for Research in Mathematical Sciences.",
+    "authors": [
+     "Jeremy P. Spinrad"
+    ],
+    "publisher": "American Mathematical Soc.",
+    "publishedDate": "2003-01-01",
+    "pageCount": 342,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=RrtXSKMAmWgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=RrtXSKMAmWgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "6TasRmIFOxQC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/6TasRmIFOxQC",
+   "volumeInfo": {
+    "title": "Algebraic Graph Theory",
+    "authors": [
+     "Norman Biggs"
+    ],
+    "publisher": "Cambridge University Press",
+    "publishedDate": "1993",
+    "description": "This is a substantial revision of a much-quoted monograph, first published in 1974. The structure is unchanged, but the text has been clarified and the notation brought into line with current practice. A large number of 'Additional Results' are included at the end of each chapter, thereby covering most of the major advances in the last twenty years. Professor Biggs' basic aim remains to express properties of graphs in algebraic terms, then to deduce theorems about them. In the first part, he tackles the applications of linear algebra and matrix theory to the study of graphs; algebraic constructions such as adjacency matrix and the incidence matrix and their applications are discussed in depth. There follows an extensive account of the theory of chromatic polynomials, a subject which has strong links with the 'interaction models' studied in theoretical physics, and the theory of knots. The last part deals with symmetry and regularity properties. Here there are important connections with other branches of algebraic combinatorics and group theory. This new and enlarged edition this will be essential reading for a wide range of mathematicians, computer scientists and theoretical physicists.",
+    "pageCount": 205,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=6TasRmIFOxQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=6TasRmIFOxQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "ocIr0RHyI8oC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/ocIr0RHyI8oC",
+   "volumeInfo": {
+    "title": "A First Course in Graph Theory",
+    "authors": [
+     "Gary Chartrand",
+     "Ping Zhang"
+    ],
+    "publisher": "Courier Corporation",
+    "publishedDate": "2012",
+    "description": "Written by two of the most prominent figures in the field of graph theory, this comprehensive text provides a remarkably student-friendly approach. Geared toward undergraduates taking a first course in graph theory, its sound yet accessible treatment emphasizes the history of graph theory and offers unique examples and lucid proofs. 2004 edition.",
+    "pageCount": 450,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=ocIr0RHyI8oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=ocIr0RHyI8oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "uaJmUtDGUkUC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/uaJmUtDGUkUC",
+   "volumeInfo": {
+    "title": "Graph Dynamics",
+    "authors": [
+     "Erich Prisner"
+    ],
+    "publisher": "CRC Press",
+    "publishedDate": "1995-11-22",
+    "description": "Study of \"graph operators\" or \"graph-valued functions\" such as the line graph, the clique graph, the complement, and powers, raises several immediate questions: Which graphs are fixed under the operator? Which graphs appear as images of graphs? What happens if the operator is iterated? Over the last 30 years these questions have been answered and methods developed for particular operators in literally hundreds of papers on the subject. Nowhere, however, could one find a comprehensive treatment-a unification of terminology, questions, and methods. Graph Dynamics provides that comprehensive treatment. Its purpose is threefold: it serves as an introductory textbook on the topic, offers an encyclopedic survey of the literature, and reports recent research-both new tools and results on concrete operators. Part I explicitly presents graph dynamics general theory, stating general principles illustrated by application to graph operators. Part 2 addresses the operators themselves. It lists all known graph operators grouped together in families and recounts, with complete references, all that is known about the dynamical behavior of these concrete operators. Graph Dynamics is the book you need if you are looking for information on a particular operator, need a text for advanced students, or want to review collected research results presented with a common terminology. It is clearly an essential resource for anyone working in or studying algebra, combinatorics, or graph theory.",
+    "pageCount": 248,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=uaJmUtDGUkUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=uaJmUtDGUkUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "FHkzyUeQ1MEC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/FHkzyUeQ1MEC",
+   "volumeInfo": {
+    "title": "Graph Theory",
+    "authors": [
+     "Bin Xiong",
+     "Zhongyi Zheng"
+    ],
+    "publisher": "World Scientific",
+    "publishedDate": "2010",
+    "description": "In 1736, the mathematician Euler invented graph theory while solving the Konigsberg seven-bridge problem. Over 200 years later, graph theory remains the skeleton content of discrete mathematics, which serves as a theoretical basis for computer science and network information science. This book introduces some basic knowledge and the primary methods in graph theory by many interesting problems and games.",
+    "pageCount": 146,
+    "categories": [
+     "Computers"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=FHkzyUeQ1MEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=FHkzyUeQ1MEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "240QO32GJOcC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/240QO32GJOcC",
+   "volumeInfo": {
+    "title": "A Beginner's Guide to Graph Theory",
+    "authors": [
+     "W.D. Wallis"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2010-05-05",
+    "description": "Concisely written, gentle introduction to graph theory suitable as a textbook or for self-study Graph-theoretic applications from diverse fields (computer science, engineering, chemistry, management science) 2nd ed. includes new chapters on labeling and communications networks and small worlds, as well as expanded beginner's material Many additional changes, improvements, and corrections resulting from classroom use",
+    "pageCount": 260,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=240QO32GJOcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=240QO32GJOcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "LWCSBAAAQBAJ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/LWCSBAAAQBAJ",
+   "volumeInfo": {
+    "title": "Graphs and Matrices",
+    "authors": [
+     "Ravindra B. Bapat"
+    ],
+    "publisher": "Springer",
+    "publishedDate": "2014-09-19",
+    "description": "This new edition illustrates the power of linear algebra in the study of graphs. The emphasis on matrix techniques is greater than in other texts on algebraic graph theory. Important matrices associated with graphs (for example, incidence, adjacency and Laplacian matrices) are treated in detail. Presenting a useful overview of selected topics in algebraic graph theory, early chapters of the text focus on regular graphs, algebraic connectivity, the distance matrix of a tree, and its generalized version for arbitrary graphs, known as the resistance matrix. Coverage of later topics include Laplacian eigenvalues of threshold graphs, the positive definite completion problem and matrix games based on a graph. Such an extensive coverage of the subject area provides a welcome prompt for further exploration. The inclusion of exercises enables practical learning throughout the book. In the new edition, a new chapter is added on the line graph of a tree, while some results in Chapter 6 on Perron-Frobenius theory are reorganized. Whilst this book will be invaluable to students and researchers in graph theory and combinatorial matrix theory, it will also benefit readers in the sciences and engineering.",
+    "pageCount": 193,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=LWCSBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=LWCSBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "NPvDAgAAQBAJ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/NPvDAgAAQBAJ",
+   "volumeInfo": {
+    "title": "Fractional Graph Theory",
+    "subtitle": "A Rational Approach to the Theory of Graphs",
+    "authors": [
+     "Edward R. Scheinerman",
+     "Daniel H. Ullman"
+    ],
+    "publisher": "Courier Corporation",
+    "publishedDate": "2013-04-29",
+    "description": "This volume explores the various ways in which integer-valued graph theory concepts can be modified to derive nonintegral values. It explains the general theory of hypergraphs and presents in-depth coverage of fundamental and advanced topics, including fractional matching, fractional coloring, fractional edge coloring, fractional arboricity via matroid methods, fractional isomorphism, and additional subjects. 1997 edition.",
+    "pageCount": 240,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=NPvDAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=NPvDAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "X0AG7HhiccoC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/X0AG7HhiccoC",
+   "volumeInfo": {
+    "title": "Chemical Graph Theory",
+    "subtitle": "Introduction and Fundamentals",
+    "authors": [
+     "D Bonchev"
+    ],
+    "publisher": "CRC Press",
+    "publishedDate": "1991-01-01",
+    "pageCount": 300,
+    "categories": [
+     "Science"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=X0AG7HhiccoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=X0AG7HhiccoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "rFH7eQffQNkC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/rFH7eQffQNkC",
+   "volumeInfo": {
+    "title": "Graphs",
+    "subtitle": "Theory and Algorithms",
+    "authors": [
+     "K. Thulasiraman",
+     "M. N. S. Swamy"
+    ],
+    "publisher": "John Wiley & Sons",
+    "publishedDate": "2011-03-29",
+    "description": "This adaptation of an earlier work by the authors is a graduate text and professional reference on the fundamentals of graph theory. It covers the theory of graphs, its applications to computer networks and the theory of graph algorithms. Also includes exercises and an updated bibliography.",
+    "pageCount": 480,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=rFH7eQffQNkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=rFH7eQffQNkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "XqYTk0sXmpoC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/XqYTk0sXmpoC",
+   "volumeInfo": {
+    "title": "Graph Theory, 1736-1936",
+    "authors": [
+     "Norman Biggs",
+     "E. Keith Lloyd",
+     "Robin J. Wilson"
+    ],
+    "publisher": "Oxford University Press",
+    "publishedDate": "1976",
+    "description": "First published in 1976, this book has been widely acclaimed both for its significant contribution to the history of mathematics and for the way that it brings the subject alive. Building on a set of original writings from some of the founders of graph theory, the book traces the historical development of the subject through a linking commentary. The relevant underlying mathematics is also explained, providing an original introduction to the subject for students. From reviews: 'The book...serves as an excellent examplein fact, as a modelof a new approach to one aspect of mathematics, when mathematics is considered as a living, vital and developing tradition.' (Edward A. Maziark in Isis) 'Biggs, Lloyd and Wilson's unusual and remarkable book traces the evolution and development of graph theory...Conceived in a very original manner and obviously written with devotion and a very great amount of painstaking historical research, it contains an exceptionally fine collection of source material, and to a graph theorist it is a treasure chest of fascinating historical information and curiosities with rich food for thought.' (Gabriel Dirac in Centaurus) 'The lucidity, grace and wit of the writing makes this book a pleasure to read and re-read.' (S. H. Hollingdale in Bulletin of the Institute of Mathematics and its Applications)",
+    "pageCount": 239,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=XqYTk0sXmpoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=XqYTk0sXmpoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "rYuToT7vHbMC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/rYuToT7vHbMC",
+   "volumeInfo": {
+    "title": "Introductory Graph Theory",
+    "authors": [
+     "Gary Chartrand"
+    ],
+    "publisher": "Courier Corporation",
+    "publishedDate": "1977",
+    "description": "Graph theory is used today in the physical sciences, social sciences, computer science, and other areas. Introductory Graph Theory presents a nontechnical introduction to this exciting field in a clear, lively, and informative style. Author Gary Chartrand covers the important elementary topics of graph theory and its applications. In addition, he presents a large variety of proofs designed to strengthen mathematical techniques and offers challenging opportunities to have fun with mathematics. Ten major topics ? profusely illustrated ? include: Mathematical Models, Elementary Concepts of Graph Theory, Transportation Problems, Connection Problems, Party Problems, Digraphs and Mathematical Models, Games and Puzzles, Graphs and Social Psychology, Planar Graphs and Coloring Problems, and Graphs and Other Mathematics. A useful Appendix covers Sets, Relations, Functions, and Proofs, and a section devoted to exercises ? with answers, hints, and solutions ? is especially valuable to anyone encountering graph theory for the first time. Undergraduate mathematics students at every level, puzzlists, and mathematical hobbyists will find well-organized coverage of the fundamentals of graph theory in this highly readable and thoroughly enjoyable book.",
+    "pageCount": 294,
+    "categories": [
+     "Science"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=rYuToT7vHbMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=rYuToT7vHbMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "A_7dphlPPecC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/A_7dphlPPecC",
+   "volumeInfo": {
+    "title": "Extremal Graph Theory",
+    "authors": [
+     "Béla Bollobás"
+    ],
+    "publisher": "Courier Corporation",
+    "publishedDate": "2004",
+    "description": "The ever-expanding field of extremal graph theory encompasses an array of problem-solving methods, including applications to economics, computer science, and optimization theory. This volume presents a concise yet comprehensive treatment, featuring complete proofs for almost all of its results and numerous exercises. 1978 edition.",
+    "pageCount": 488,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=A_7dphlPPecC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=A_7dphlPPecC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "1k3DxILhDugC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/1k3DxILhDugC",
+   "volumeInfo": {
+    "title": "Combinatorics and Graph Theory",
+    "authors": [
+     "John M. Harris",
+     "Jeffry L. Hirst",
+     "Michael J. Mossinghoff"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2000-07-19",
+    "description": "This book evolved from several courses in combinatorics and graph theory given at Appalachian State University and UCLA. Chapter 1 focuses on finite graph theory, including trees, planarity, coloring, matchings, and Ramsey theory. Chapter 2 studies combinatorics, including the principle of inclusion and exclusion, generating functions, recurrence relations, Pólya theory, the stable marriage problem, and several important classes of numbers. Chapter 3 presents infinite pigeonhole principles, König's lemma, and Ramsey's theorem, and discusses their connections to axiomatic set theory. The text is written in an enthusiastic and lively style. It includes results and problems that cross subdisciplines, emphasizing relationships between different areas of mathematics. In addition, recent results appear in the text, illustrating the fact that mathematics is a living discipline. The text is primarily directed toward upper-division undergraduate students, but lower-division undergraduates with a penchant for proof and graduate students seeking an introduction to these subjects will also find much of interest.",
+    "pageCount": 228,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=1k3DxILhDugC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=1k3DxILhDugC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "JeIlBQAAQBAJ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/JeIlBQAAQBAJ",
+   "volumeInfo": {
+    "title": "Modern Graph Theory",
+    "authors": [
+     "Bela Bollobas"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2013-12-01",
+    "description": "An in-depth account of graph theory, written for serious students of mathematics and computer science. It reflects the current state of the subject and emphasises connections with other branches of pure mathematics. Recognising that graph theory is one of several courses competing for the attention of a student, the book contains extensive descriptive passages designed to convey the flavour of the subject and to arouse interest. In addition to a modern treatment of the classical areas of graph theory, the book presents a detailed account of newer topics, including Szemerédis Regularity Lemma and its use, Shelahs extension of the Hales-Jewett Theorem, the precise nature of the phase transition in a random graph process, the connection between electrical networks and random walks on graphs, and the Tutte polynomial and its cousins in knot theory. Moreover, the book contains over 600 well thought-out exercises: although some are straightforward, most are substantial, and some will stretch even the most able reader.",
+    "pageCount": 394,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=JeIlBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=JeIlBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "uhUIAQAAMAAJ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/uhUIAQAAMAAJ",
+   "volumeInfo": {
+    "title": "Graph It!",
+    "subtitle": "How to Make, Read, and Interpret Graphs",
+    "authors": [
+     "Richard W. Bowen"
+    ],
+    "publishedDate": "1992",
+    "description": "A guide to achieving the graphic literacy necessary for courses on research methods in psychology and statistics. With sample illustrations the book teaches how to recognize and describe data relationships depicted in graph form, using a background consistent with courses in research methods.",
+    "pageCount": 106,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=uhUIAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=uhUIAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "-tIaXdII8egC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/-tIaXdII8egC",
+   "volumeInfo": {
+    "title": "Graph Symmetry",
+    "subtitle": "Algebraic Methods and Applications",
+    "authors": [
+     "Gena Hahn",
+     "Gert Sabidussi"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "1997-06-30",
+    "description": "The last decade has seen parallel developments in computer science and combinatorics, both dealing with networks having strong symmetry properties. Both developments are centred on Cayley graphs: in the design of large interconnection networks, Cayley graphs arise as one of the most frequently used models; on the mathematical side, they play a central role as the prototypes of vertex-transitive graphs. The surveys published here provide an account of these developments, with a strong emphasis on the fruitful interplay of methods from group theory and graph theory that characterises the subject. Topics covered include: combinatorial properties of various hierarchical families of Cayley graphs (fault tolerance, diameter, routing, forwarding indices, etc.); Laplace eigenvalues of graphs and their relations to forwarding problems, isoperimetric properties, partition problems, and random walks on graphs; vertex-transitive graphs of small orders and of orders having few prime factors; distance transitive graphs; isomorphism problems for Cayley graphs of cyclic groups; infinite vertex-transitive graphs (the random graph and generalisations, actions of the automorphisms on ray ends, relations to the growth rate of the graph).",
+    "pageCount": 418,
+    "categories": [
+     "Computers"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=-tIaXdII8egC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=-tIaXdII8egC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "p1apt6tx3dYC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/p1apt6tx3dYC",
+   "volumeInfo": {
+    "title": "Graph Theory",
+    "authors": [
+     "B. Bollobás"
+    ],
+    "publisher": "Elsevier",
+    "publishedDate": "1982-01-01",
+    "description": "The Cambridge Graph Theory Conference, held at Trinity College from 11 to 13 March 1981, brought together top ranking workers from diverse areas of the subject. The papers presented were by invitation only. This volume contains most of the contniutions, suitably refereed and revised. For many years now, graph theory has been developing at a great pace and in many directions. In order to emphasize the variety of questions and to preserve the freshness of research, the theme of the meeting was not restricted. Consequently, the papers in this volume deal with many aspects of graph theory, including colouring, connectivity, cycles, Ramsey theory, random graphs, flows, simplicial decompositions and directed graphs. A number of other papers are concerned with related areas, including hypergraphs, designs, algorithms, games and social models. This wealth of topics should enhance the attractiveness of the volume.",
+    "pageCount": 200,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=p1apt6tx3dYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=p1apt6tx3dYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "YUc38_MCuhAC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/YUc38_MCuhAC",
+   "volumeInfo": {
+    "title": "Spectral Graph Theory",
+    "authors": [
+     "Fan R. K. Chung"
+    ],
+    "publisher": "American Mathematical Soc.",
+    "description": "Beautifully written and elegantly presented, this book is based on 10 lectures given at the CBMS workshop on spectral graph theory in June 1994 at Fresno State University. Chung's well-written exposition can be likened to a conversation with a good teacher - one who not only gives you the facts, but tells you what is really going on, why it is worth doing, and how it is related to familiar ideas in other areas. The monograph is accessible to the nonexpert who is interested in reading about this evolving area of mathematics.",
+    "pageCount": 207,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=YUc38_MCuhAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=YUc38_MCuhAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "Igxznbmtd4EC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Igxznbmtd4EC",
+   "volumeInfo": {
+    "title": "Holiday Graph Art",
+    "authors": [
+     "Erling Freeberg",
+     "Dolores Freeberg"
+    ],
+    "publisher": "Teacher Created Resources",
+    "publishedDate": "1987-06-01",
+    "description": "This graph art activity book is a compilation of holiday pictures which are designed to fit graph paper squares. The child colors in the squares on graph paper according to the direction sheet, and a mystery picture appears.",
+    "pageCount": 48,
+    "categories": [
+     "Design"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Igxznbmtd4EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Igxznbmtd4EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "hsymFm0E0uIC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/hsymFm0E0uIC",
+   "volumeInfo": {
+    "title": "Topics in Graph Automorphisms and Reconstruction",
+    "authors": [
+     "Josef Lauri",
+     "Raffaele Scapellato"
+    ],
+    "publisher": "Cambridge University Press",
+    "publishedDate": "2003-03-17",
+    "description": "An in-depth look at selected areas of graph theory, with a focus on symmetry properties of graphs.",
+    "pageCount": 159,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=hsymFm0E0uIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=hsymFm0E0uIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "1qRvTI_oWUAC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/1qRvTI_oWUAC",
+   "volumeInfo": {
+    "title": "Graphs and Applications",
+    "subtitle": "An Introductory Approach",
+    "authors": [
+     "Joan M. Aldous",
+     "Robin J. Wilson"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2003-02-10",
+    "description": "Discrete Mathematics is one of the fastest growing areas in mathematics today with an ever-increasing number of courses in schools and universities. Graphs and Applications is based on a highly successful Open University course and the authors have paid particular attention to the presentation, clarity and arrangement of the material, making it ideally suited for independent study and classroom use. Includes a large number of examples, problems and exercises.",
+    "pageCount": 444,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=1qRvTI_oWUAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=1qRvTI_oWUAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "6fzHPEkpMpYC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/6fzHPEkpMpYC",
+   "volumeInfo": {
+    "title": "Magic Graphs",
+    "authors": [
+     "Alison M. Marr",
+     "W.D. Wallis"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2012-11-06",
+    "description": "Magic squares are among the more popular mathematical recreations. Over the last 50 years, many generalizations of “magic” ideas have been applied to graphs. Recently there has been a resurgence of interest in “magic labelings” due to a number of results that have applications to the problem of decomposing graphs into trees. Key features of this second edition include: · a new chapter on magic labeling of directed graphs · applications of theorems from graph theory and interesting counting arguments · new research problems and exercises covering a range of difficulties · a fully updated bibliography and index This concise, self-contained exposition is unique in its focus on the theory of magic graphs/labelings. It may serve as a graduate or advanced undergraduate text for courses in mathematics or computer science, and as reference for the researcher.",
+    "pageCount": 188,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=6fzHPEkpMpYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=6fzHPEkpMpYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "JQm7Nad3DuoC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/JQm7Nad3DuoC",
+   "volumeInfo": {
+    "title": "Decompositions of Graphs",
+    "authors": [
+     "Juraj Bosák"
+    ],
+    "publisher": "Taylor & Francis",
+    "publishedDate": "1990-08-31",
+    "description": "This nice text (twenty years in the writing, published posthumously) would serve well to introduce graduate students (those who can afford it ) to a rich and important class of graph-theoretic problems and concepts. Fifteen short chapters (under three broad topical heads), to each of which are attac",
+    "pageCount": 248,
+    "categories": [
+     "Computers"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=JQm7Nad3DuoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=JQm7Nad3DuoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "kzXfd-ijtPoC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/kzXfd-ijtPoC",
+   "volumeInfo": {
+    "title": "A Course on the Web Graph",
+    "authors": [
+     "Anthony Bonato"
+    ],
+    "publisher": "American Mathematical Soc.",
+    "description": "\"A Course on the Web Graph provides a comprehensive introduction to state-of-the-art research on the applications of graph theory to real-world networks such as the web graph. It is the first mathematically rigorous textbook discussing both models of the web graph and algorithms for searching the web. After introducing key tools required for the study of web graph mathematics, an overview is given of the most widely studied models for the web graph. A discussion of popular web search algorithms, e.g. PageRank, is followed by additional topics, such as applications of infinite graph theory to the web graph, spectral properties of power law graphs, domination in the web graph, and the spread of viruses in networks. The book is based on a graduate course taught at the AARMS 2006 Summer School at Dalhousie University. As such it is self-contained and includes over 100 exercises. The reader of the book will gain a working knowledge of current research in graph theory and its modern applications. In addition, the reader will learn first-hand about models of the web, and the mathematics underlying modern search engines.\"--Publisher's description.",
+    "pageCount": 184,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=kzXfd-ijtPoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=kzXfd-ijtPoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "uTGhooU37h4C",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/uTGhooU37h4C",
+   "volumeInfo": {
+    "title": "Graph Theory",
+    "authors": [
+     "W. T. Tutte"
+    ],
+    "publisher": "Cambridge University Press",
+    "publishedDate": "2001-01-29",
+    "description": "A classic reference for students and researchers in graph theory and its applications.",
+    "pageCount": 333,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=uTGhooU37h4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=uTGhooU37h4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "infcglglbQAC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/infcglglbQAC",
+   "volumeInfo": {
+    "title": "Graph Spectra for Complex Networks",
+    "authors": [
+     "Piet van Mieghem"
+    ],
+    "publisher": "Cambridge University Press",
+    "publishedDate": "2010-12-02",
+    "description": "Analyzing the behavior of complex networks is an important element in the design of new man-made structures such as communication systems and biologically engineered molecules. Because any complex network can be represented by a graph, and therefore in turn by a matrix, graph theory has become a powerful tool in the investigation of network performance. This self-contained 2010 book provides a concise introduction to the theory of graph spectra and its applications to the study of complex networks. Covering a range of types of graphs and topics important to the analysis of complex systems, this guide provides the mathematical foundation needed to understand and apply spectral insight to real-world systems. In particular, the general properties of both the adjacency and Laplacian spectrum of graphs are derived and applied to complex networks. An ideal resource for researchers and students in communications networking as well as in physics and mathematics.",
+    "categories": [
+     "Technology & Engineering"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=infcglglbQAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=infcglglbQAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "H32ARnDv3pYC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/H32ARnDv3pYC",
+   "volumeInfo": {
+    "title": "Graph Theory and Its Engineering Applications",
+    "authors": [
+     "Wai-Kai Chen"
+    ],
+    "publisher": "World Scientific",
+    "publishedDate": "1997",
+    "description": "The intuitive diagrammatic nature of graphs makes them useful in modelling systems in engineering problems. This text gives an account of material related to such applications, including minimal cost flows and rectangular dissection and layouts. A major th",
+    "pageCount": 698,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=H32ARnDv3pYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=H32ARnDv3pYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "QXHx5rEhI_AC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/QXHx5rEhI_AC",
+   "volumeInfo": {
+    "title": "Algorithms in C, Part 5",
+    "subtitle": "Graph Algorithms",
+    "authors": [
+     "Robert Sedgewick"
+    ],
+    "publisher": "Pearson Education",
+    "publishedDate": "2001-08-16",
+    "description": "Once again, Robert Sedgewick provides a current and comprehensive introduction to important algorithms. The focus this time is on graph algorithms, which are increasingly critical for a wide range of applications, such as network connectivity, circuit design, scheduling, transaction processing, and resource allocation. In this book, Sedgewick offers the same successful blend of theory and practice with concise implementations that can be tested on real applications, which has made his work popular with programmers for many years. Algorithms in C, Third Edition, Part 5: Graph Algorithms is the second book in Sedgewick's thoroughly revised and rewritten series. The first book, Parts 1-4, addresses fundamental algorithms, data structures, sorting, and searching. A forthcoming third book will focus on strings, geometry, and a range of advanced algorithms. Each book's expanded coverage features new algorithms and implementations, enhanced descriptions and diagrams, and a wealth of new exercises for polishing skills. A focus on abstract data types makes the programs more broadly useful and relevant for the modern object-oriented programming environment. Coverage includes: A complete overview of graph properties and types Diagraphs and DAGs Minimum spanning trees Shortest paths Network flows Diagrams, sample C code, and detailed algorithm descriptions The Web site for this book (http://www.cs.princeton.edu/~rs/) provides additional source code for programmers along with numerous support materials for educators. A landmark revision, Algorithms in C, Third Edition, Part 5 provides a complete tool set for programmers to implement, debug, and use graph algorithms across a wide range of computer applications.",
+    "pageCount": 512,
+    "categories": [
+     "Computers"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=QXHx5rEhI_AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=QXHx5rEhI_AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "gs9XM1QrOL0C",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/gs9XM1QrOL0C",
+   "volumeInfo": {
+    "title": "Graphs of Groups on Surfaces",
+    "subtitle": "Interactions and Models",
+    "authors": [
+     "A.T. White"
+    ],
+    "publisher": "Elsevier",
+    "publishedDate": "2001-04-27",
+    "description": "The book, suitable as both an introductory reference and as a text book in the rapidly growing field of topological graph theory, models both maps (as in map-coloring problems) and groups by means of graph imbeddings on sufaces. Automorphism groups of both graphs and maps are studied. In addition connections are made to other areas of mathematics, such as hypergraphs, block designs, finite geometries, and finite fields. There are chapters on the emerging subfields of enumerative topological graph theory and random topological graph theory, as well as a chapter on the composition of English church-bell music. The latter is facilitated by imbedding the right graph of the right group on an appropriate surface, with suitable symmetries. Throughout the emphasis is on Cayley maps: imbeddings of Cayley graphs for finite groups as (possibly branched) covering projections of surface imbeddings of loop graphs with one vertex. This is not as restrictive as it might sound; many developments in topological graph theory involve such imbeddings. The approach aims to make all this interconnected material readily accessible to a beginning graduate (or an advanced undergraduate) student, while at the same time providing the research mathematician with a useful reference book in topological graph theory. The focus will be on beautiful connections, both elementary and deep, within mathematics that can best be described by the intuitively pleasing device of imbedding graphs of groups on surfaces.",
+    "pageCount": 378,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=gs9XM1QrOL0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=gs9XM1QrOL0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "35Q-maYtuVYC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/35Q-maYtuVYC",
+   "volumeInfo": {
+    "title": "Graphs and Their Uses",
+    "authors": [
+     "Oystein Ore"
+    ],
+    "publisher": "Cambridge University Press",
+    "publishedDate": "1990-01-01",
+    "description": "Classic text on graph theory, brought up to date by Robin Wilson, himself a best-selling maths author.",
+    "pageCount": 153,
+    "categories": [
+     "Mathematics"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=35Q-maYtuVYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=35Q-maYtuVYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  },
+  {
+   "id": "iQMK5EaHnuUC",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/iQMK5EaHnuUC",
+   "volumeInfo": {
+    "title": "Great Graph Art",
+    "subtitle": "Multiplication & Division",
+    "authors": [
+     "Cindi Mitchell"
+    ],
+    "publisher": "Scholastic Inc.",
+    "publishedDate": "2000-01-01",
+    "description": "Kids will clamor for these fun-filled graphing activities that help them practice basic multiplication and division facts. First they solve a series of math problems and plot the answers on a graph. When they connect the points, a picture surprise emerges! These reproducible activities are surefire ways to motivate even your most reluctant student! For use with Grades 3-4.",
+    "pageCount": 64,
+    "categories": [
+     "Education"
+    ],
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=iQMK5EaHnuUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=iQMK5EaHnuUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+   }
+  }
+ ]
+}
