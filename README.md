@@ -4,5 +4,4 @@
 # TODO
 
 **user service**
-- hooks
-- user model with orm
+- auth hooks

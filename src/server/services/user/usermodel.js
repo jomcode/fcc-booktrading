@@ -11,6 +11,15 @@ const UserSchema = new Schema({
   password: {
     type: String,
     required: true
+  },
+  name: {
+    type: String
+  },
+  city: {
+    type: String
+  },
+  state: {
+    type: String
   }
 });
 
