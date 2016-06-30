@@ -33,7 +33,7 @@ class Service {
   }
 }
 
-module.exports = function bootstrapGoogleBooks() {
+module.exports = function initGoogleBooks() {
   const app = this;
 
   app.use('/googlebooks', new Service());
