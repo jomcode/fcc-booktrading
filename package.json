@@ -85,7 +85,17 @@
     "webpack-merge": "^0.14.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
     "core-js": "^2.4.0",
+    "cors": "^2.7.1",
+    "feathers": "^2.0.1",
+    "feathers-authentication": "^0.7.9",
+    "feathers-configuration": "^0.3.0",
+    "feathers-errors": "^2.2.0",
+    "feathers-hooks": "^1.5.4",
+    "feathers-rest": "^1.4.2",
+    "got": "^6.3.0",
     "normalize.css": "^4.2.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
