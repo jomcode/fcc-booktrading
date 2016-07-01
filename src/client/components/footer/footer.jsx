@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     return (
-      <div>
+      <footer>
         footer.jsx
-      </div>
+      </footer>
     );
   }
 }
