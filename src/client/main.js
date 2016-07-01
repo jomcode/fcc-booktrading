@@ -2,24 +2,31 @@
 import { AppContainer as HotContainer } from 'react-hot-loader';
 import React from 'react';
 import { render } from 'react-dom';
+import { hashHistory } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
 
-import App from './app';
+import Root from './components/root/root';
+import configureStore from './redux/store/configurestore';
+
+const store = configureStore();
+const history = syncHistoryWithStore(hashHistory, store);
+
 const rootElement = document.getElementById('root');
 
 render(
   <HotContainer>
-    <App />
+    <Root store={store} history={history} />
   </HotContainer>,
   rootElement
 );
 
 if (module.hot) {
-  module.hot.accept('./app', () => {
-    const NextApp = require('./app').default;
+  module.hot.accept('./components/root/root', () => {
+    const NextApp = require('./components/root/root').default;
 
     render(
       <HotContainer>
-        <NextApp />
+        <NextApp store={store} history={history} />
       </HotContainer>,
       rootElement
     );
