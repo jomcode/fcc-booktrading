@@ -5,3 +5,6 @@
 
 **user service**
 - auth hooks
+
+**app component**
+- connect to redux and pass auth actions to header

@@ -25,9 +25,20 @@ const login = (email, password) => app.authenticate({
 // Check for existing valid token
 const checkToken = () => app.authenticate();
 
+// Logout
+const logout = () => app.logout();
+
+// Get books
+const getGoogleBooks = () => {
+  const googleBooks = app.service('googlebooks');
+  return googleBooks.find();
+};
+
 const service = {
   login,
-  checkToken
+  checkToken,
+  logout,
+  getGoogleBooks
 };
 
 export default service;
