@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import App from '../components/app/app';
+import AppContainer from '../redux/containers/appcontainer';
+// import App from '../components/app/app';
 import Index from '../components/index/index';
 
 const routes = (
-  <Route path="/" component={App}>
+  <Route path="/" component={AppContainer}>
     <IndexRoute component={Index} />
   </Route>
 );

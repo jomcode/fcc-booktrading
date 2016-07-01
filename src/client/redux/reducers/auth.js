@@ -19,9 +19,23 @@ const auth = (state = initialState, action) => {
     case ActionTypes.LOGOUT_FAILURE: {}
     case ActionTypes.RESET_LOGOUT: {}
 
-    case ActionTypes.CHECK_TOKEN: {}
-    case ActionTypes.CHECK_TOKEN_SUCCESS: {}
+    case ActionTypes.CHECK_TOKEN: {
+      return Object.assign({}, state, { isFetching: true });
+    }
+
+    case ActionTypes.CHECK_TOKEN_SUCCESS: {
+      const { token, data } = action.payload;
+
+      return Object.assign({}, state, {
+        token: token.slice(),
+        user: Object.assign({}, data),
+        isAuthenticated: true,
+        isFetching: false
+      });
+    }
+
     case ActionTypes.CHECK_TOKEN_FAILURE: {}
+
     case ActionTypes.RESET_CHECK_TOKEN: {}
 
     default:

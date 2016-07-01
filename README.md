@@ -13,3 +13,8 @@ write redux containers and wire up components to actions for auth, googlebooks
 **book/googlebooks service(s)**
 - think about combining both into one service. use the `find` method for
 querying google books api. use the `get` method for querying books by user
+
+**custom middleware**
+- middleware for checking for actions that have `error` property or
+something else like `notification` property to display toastr style messages
+to the user

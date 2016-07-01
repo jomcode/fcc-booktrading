@@ -87,8 +87,14 @@ const checkUserToken = () => dispatch => {
   dispatch(checkToken());
 
   feathers.checkToken()
-    .then(r => console.log(r))
-    .catch(e => console.error(e));
+    .then(r => {
+      const token = r.token.slice();
+      const data = Object.assign({}, r.data);
+      dispatch(checkTokenSuccess(token, data));
+    })
+    .catch(e => {
+      dispatch(checkTokenFailure(e));
+    });
 };
 
 export { checkUserToken };
