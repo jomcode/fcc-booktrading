@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 
+import Header from '../header/header';
+import Footer from '../footer/footer';
+
 class App extends Component {
   render() {
     const { children } = this.props;
 
     return (
       <div>
-        app.jsx
+        <Header />
+
         {children}
+
+        <Footer />
       </div>
     );
   }
