@@ -12,8 +12,11 @@ use `ownerField: 'id'` in auth hooks without getting error
 - connect to redux and pass auth actions to header
 
 **book/googlebooks service(s)**
+[feathers authorization bundled hooks](http://docs.feathersjs.com/authorization/bundled-hooks.html#querywithcurrentuser)
+
 - think about combining both into one service. use the `find` method for
-querying google books api. use the `get` method for querying books by user
+querying google books api. use the `get` method for querying books by user.
+can use `queryWithCurrentUser` hook.
 
 **custom middleware**
 - middleware for checking for actions that have `error` property or
