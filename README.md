@@ -2,7 +2,8 @@
 [Details and Requirements](https://www.freecodecamp.com/challenges/manage-a-book-trading-club)
 
 # TODO
-write redux containers and wire up components to actions for auth, googlebooks
+figure out if config/default.js auth: idField can be set to `_id` and you can
+use `ownerField: 'id'` in auth hooks without getting error
 
 **user service**
 - auth hooks
