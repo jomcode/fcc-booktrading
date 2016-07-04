@@ -12,6 +12,11 @@ class App extends Component {
     this._handleLogout = this._handleLogout.bind(this);
   }
 
+  componentDidUpdate(prevProps) {
+    const { isAuthenticated, router } = this.props;
+    if (prevProps.isAuthenticated && !isAuthenticated) router.push('/');
+  }
+
   _handleLogout() {
     const { actions: { logoutUser }, isAuthenticated, dispatch } = this.props;
     if (isAuthenticated) dispatch(logoutUser());
@@ -34,5 +39,7 @@ class App extends Component {
     );
   }
 }
+
+App = withRouter(App);
 
 export default App;
