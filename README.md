@@ -2,14 +2,9 @@
 [Details and Requirements](https://www.freecodecamp.com/challenges/manage-a-book-trading-club)
 
 # TODO
-figure out if config/default.js auth: idField can be set to `_id` and you can
-use `ownerField: 'id'` in auth hooks without getting error
-
-**user service**
-- auth hooks
-
-**app component**
-- connect to redux and pass auth actions to header
+**dashboard**
+have dashboard display user profile info, current status of their pending and
+received trades, overview of their books that they own
 
 **book/googlebooks service(s)**
 [feathers authorization bundled hooks](http://docs.feathersjs.com/authorization/bundled-hooks.html#querywithcurrentuser)
