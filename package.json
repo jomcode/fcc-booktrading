@@ -109,6 +109,7 @@
     "redux": "^3.5.2",
     "redux-form": "^5.3.1",
     "redux-thunk": "^2.1.0",
+    "whatwg-fetch": "^1.0.0",
     "winston": "^2.2.0"
   }
 }
