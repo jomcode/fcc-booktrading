@@ -34,6 +34,12 @@ const checkToken = () => app.authenticate();
 // Logout
 const logout = () => app.logout();
 
+// Edit User Profile
+const editUserProfile = (id, data) => {
+  const userService = app.service('users');
+  return userService.patch(id, data);
+};
+
 // Get books
 const getGoogleBooks = () => {
   const googleBooks = app.service('googlebooks');
@@ -45,6 +51,7 @@ const service = {
   logUserIn,
   checkToken,
   logout,
+  editUserProfile,
   getGoogleBooks
 };
 

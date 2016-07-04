@@ -5,7 +5,8 @@ import * as actions from '../actions/editprofile';
 
 const mapStateToProps = state => ({
   editProfile: state.editProfile,
-  isAuthenticated: state.auth.isAuthenticated
+  isAuthenticated: state.auth.isAuthenticated,
+  userId: state.auth.user._id
 });
 
 const mapDispatchToProps = dispatch => ({

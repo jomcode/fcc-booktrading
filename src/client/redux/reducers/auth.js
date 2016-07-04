@@ -18,6 +18,11 @@ const auth = (state = initialState, action) => {
       });
     }
 
+    case ActionTypes.EDIT_PROFILE_SUCCESS: {
+      const { user } = action.payload;
+      return Object.assign({}, state, { user });
+    }
+
     case ActionTypes.LOGOUT: {
       return Object.assign({}, state, { isFetching: true });
     }

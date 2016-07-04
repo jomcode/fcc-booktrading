@@ -19,7 +19,7 @@ class LogInForm extends Component {
 }
 
 LogInForm = reduxForm({
-  form: 'register',
+  form: 'logIn',
   fields: ['email', 'password']
 })(LogInForm);
 
