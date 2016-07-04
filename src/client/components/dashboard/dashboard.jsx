@@ -10,7 +10,7 @@ class Dashboard extends Component {
   componentDidMount() {
     const { isAuthenticated } = this.props;
     if (isAuthenticated) {
-      // TODO fetch user data
+      // TODO fetch user data (pending trades, books, etc)
     }
   }
 
