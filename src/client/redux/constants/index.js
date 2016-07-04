@@ -1,3 +1,9 @@
+/* Register User */
+export const REGISTER_USER = 'REGISTER_USER';
+export const REGISTER_USER_SUCCESS = 'REGISTER_USER_SUCCESS';
+export const REGISTER_USER_FAILURE = 'REGISTER_USER_FAILURE';
+export const RESET_REGISTER_USER = 'RESET_REGISTER_USER';
+
 /* Login - get token from server */
 export const LOGIN = 'LOGIN';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';

@@ -9,15 +9,33 @@ const initialState = {
 
 const auth = (state = initialState, action) => {
   switch (action.type) {
-    case ActionTypes.LOGIN: {}
-    case ActionTypes.LOGIN_SUCCESS: {}
-    case ActionTypes.LOGIN_FAILURE: {}
-    case ActionTypes.RESET_LOGIN: {}
+    case ActionTypes.LOGIN_SUCCESS: {
+      const { token, user } = action.payload;
+      return Object.assign({}, state, {
+        isAuthenticated: true,
+        token,
+        user
+      });
+    }
 
-    case ActionTypes.LOGOUT: {}
-    case ActionTypes.LOGOUT_SUCCESS: {}
-    case ActionTypes.LOGOUT_FAILURE: {}
-    case ActionTypes.RESET_LOGOUT: {}
+    case ActionTypes.LOGOUT: {
+      return Object.assign({}, state, { isFetching: true });
+    }
+
+    case ActionTypes.LOGOUT_SUCCESS: {
+      return Object.assign({}, state, {
+        isFetching: false,
+        token: null,
+        user: null,
+        isAuthenticated: false
+      });
+    }
+
+    case ActionTypes.LOGOUT_FAILURE: {
+      return Object.assign({}, state, { isFetching: false });
+    }
+
+    // case ActionTypes.RESET_LOGOUT: {}
 
     case ActionTypes.CHECK_TOKEN: {
       return Object.assign({}, state, { isFetching: true });
@@ -34,9 +52,13 @@ const auth = (state = initialState, action) => {
       });
     }
 
-    case ActionTypes.CHECK_TOKEN_FAILURE: {}
+    case ActionTypes.CHECK_TOKEN_FAILURE: {
+      return Object.assign({}, state, {
+        isFetching: false
+      });
+    }
 
-    case ActionTypes.RESET_CHECK_TOKEN: {}
+    // case ActionTypes.RESET_CHECK_TOKEN: {}
 
     default:
       return state;

@@ -15,8 +15,14 @@ const app = feathers()
     tokenKey: 'jom-booktrading-jwt'
   }));
 
-// Login
-const login = (email, password) => app.authenticate({
+// Create User
+const createUser = (data) => {
+  const userService = app.service('users');
+  return userService.create(data);
+};
+
+// Log User In
+const logUserIn = (email, password) => app.authenticate({
   type: 'local',
   email,
   password
@@ -35,7 +41,8 @@ const getGoogleBooks = () => {
 };
 
 const service = {
-  login,
+  createUser,
+  logUserIn,
   checkToken,
   logout,
   getGoogleBooks

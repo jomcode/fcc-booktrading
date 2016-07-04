@@ -1,4 +1,6 @@
 /* client entry point */
+if (process.env.HMR === 'enabled') require('react-hot-loader/patch');
+
 import { AppContainer as HotContainer } from 'react-hot-loader';
 import React from 'react';
 import { render } from 'react-dom';

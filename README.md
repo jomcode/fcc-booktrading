@@ -21,4 +21,4 @@ can use `queryWithCurrentUser` hook.
 **custom middleware**
 - middleware for checking for actions that have `error` property or
 something else like `notification` property to display toastr style messages
-to the user
+to the user. use react-notification-system for this

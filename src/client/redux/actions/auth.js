@@ -1,38 +1,6 @@
 import * as ActionTypes from '../constants';
 import feathers from '../../services/feathers';
 
-/* Login */
-const login = (email, password) => ({
-  type: ActionTypes.LOGIN
-});
-
-const loginSuccess = (token, data) => ({
-  type: ActionTypes.LOGIN_SUCCESS,
-  payload: {
-    token,
-    data
-  }
-});
-
-const loginFailure = (error) => ({
-  type: ActionTypes.LOGIN_FAILURE,
-  error
-});
-
-const resetLogin = () => ({
-  type: ActionTypes.RESET_LOGIN
-});
-
-const loginUser = (email, password) => dispatch => {
-  dispatch(login());
-
-  feathers.login(email, password)
-    .then(r => console.log(r))
-    .catch(e => console.error(e));
-};
-
-export { loginUser };
-
 /* Logout */
 const logout = () => ({
   type: ActionTypes.LOGOUT
@@ -55,11 +23,11 @@ const logoutUser = () => dispatch => {
   dispatch(logout());
 
   feathers.logout()
-    .then(r => console.log(r))
-    .catch(e => console.error(e));
+    .then(r => dispatch(logoutSuccess()))
+    .catch(e => dispatch(logoutFailure()));
 };
 
-export { logoutUser };
+export { logoutUser, resetLogout };
 
 /* Check Token */
 const checkToken = () => ({
@@ -97,4 +65,4 @@ const checkUserToken = () => dispatch => {
     });
 };
 
-export { checkUserToken };
+export { checkUserToken, resetCheckToken };
