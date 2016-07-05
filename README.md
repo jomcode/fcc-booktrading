@@ -6,6 +6,9 @@
 have dashboard display user profile info, current status of their pending and
 received trades, overview of their books that they own
 
+**auth hooks**
+apply auth hooks to book, trade services
+
 **book/googlebooks service(s)**
 [feathers authorization bundled hooks](http://docs.feathersjs.com/authorization/bundled-hooks.html#querywithcurrentuser)
 
