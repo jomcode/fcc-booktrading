@@ -40,11 +40,19 @@ const editUserProfile = (id, data) => {
   return userService.patch(id, data);
 };
 
-// Get books
-const getGoogleBooks = () => {
+// Get books from google api
+const getGoogleBooks = (params) => {
   const bookService = app.service('books');
-  return bookService.find();
+  return bookService.find(params);
 };
+
+// Get books from all users
+// TODO
+const getAllUserBooks = () => {};
+
+// Get books for owner (user's books)
+// TODO
+const getAllOwnerBooks = () => {};
 
 const service = {
   createUser,
@@ -52,7 +60,9 @@ const service = {
   checkToken,
   logout,
   editUserProfile,
-  getGoogleBooks
+  getGoogleBooks,
+  getAllUserBooks,
+  getAllOwnerBooks
 };
 
 export default service;

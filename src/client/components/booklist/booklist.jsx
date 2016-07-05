@@ -8,7 +8,7 @@ class BookList extends Component {
       <div>
         {
           books.length > 0 ?
-            books.map(b => <div>{b.volumeInfo.title}</div>) :
+            books.map(b => <div key={b.id}>{b.volumeInfo.title}</div>) :
             null
         }
       </div>

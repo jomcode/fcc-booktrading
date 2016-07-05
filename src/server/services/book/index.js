@@ -12,6 +12,7 @@ class Service {
     this.app = app;
   }
 
+  // params - query and filter(google or users)
   find(params) {
     /* working - using mock data for development
     const rootUrl = 'https://www.googleapis.com/books/v1/volumes';
@@ -31,6 +32,12 @@ class Service {
     */
     return Promise.resolve(require('./mockdata.json'));
   }
+
+  // get(id, params) {}
+  // create(data, params) {}
+  // update(id, data, params) {}
+  // patch(id, data, params) {}
+  // remove(id, params) {}
 }
 
 module.exports = function initGoogleBooks() {

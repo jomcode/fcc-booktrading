@@ -15,7 +15,7 @@ class BookBrowser extends Component {
     const filter = data.filter.slice();
     const query = data.query.slice();
 
-    if (filter === 'google') dispatch(getBooksFromGoogle(query));
+    if (filter === 'google') dispatch(getBooksFromGoogle({ query, filter }));
   }
 
   render() {
