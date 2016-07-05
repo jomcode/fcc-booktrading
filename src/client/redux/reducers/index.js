@@ -9,6 +9,7 @@ import editProfile from './editprofile';
 import bookBrowser from './bookbrowser';
 import bookSearch from './booksearch';
 import saveBook from './savebook';
+import dashboard from './dashboard';
 
 const rootReducer = combineReducers({
   auth,
@@ -18,6 +19,7 @@ const rootReducer = combineReducers({
   bookBrowser,
   bookSearch,
   saveBook,
+  dashboard,
   routing: routerReducer,
   form: formReducer
 });

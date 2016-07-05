@@ -52,7 +52,10 @@ const getAllUserBooks = () => {};
 
 // Get books for owner (user's books)
 // TODO
-const getAllOwnerBooks = () => {};
+const getAllOwnerBooks = (params) => {
+  const bookService = app.service('books');
+  return bookService.find(params);
+};
 
 // Save book to user
 const saveUserBook = (data) => {

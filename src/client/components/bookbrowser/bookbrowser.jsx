@@ -42,7 +42,12 @@ class BookBrowser extends Component {
           initialValues={{ filter: 'google' }}
         />
 
-        <BookList books={books} userId={userId} onSave={this._handleBookSave} />
+        <BookList
+          books={books}
+          userId={userId}
+          onSave={this._handleBookSave}
+          mode="browser"
+        />
       </div>
     );
   }

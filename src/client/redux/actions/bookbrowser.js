@@ -40,8 +40,11 @@ const saveUserBook = () => ({
   type: ActionTypes.SAVE_USER_BOOK
 });
 
-const saveUserBookSuccess = () => ({
-  type: ActionTypes.SAVE_USER_BOOK_SUCCESS
+const saveUserBookSuccess = (data) => ({
+  type: ActionTypes.SAVE_USER_BOOK_SUCCESS,
+  payload: {
+    data
+  }
 });
 
 const saveUserBookFailure = (error) => ({
@@ -57,10 +60,7 @@ const saveBookToUser = (data) => dispatch => {
   dispatch(saveUserBook());
 
   feathers.saveUserBook(data)
-    .then(r => {
-      console.log(r);
-      dispatch(saveUserBookSuccess());
-    })
+    .then(r => dispatch(saveUserBookSuccess(r)))
     .catch(e => dispatch(saveUserBookFailure(e)));
 };
 
