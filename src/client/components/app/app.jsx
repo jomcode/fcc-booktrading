@@ -5,11 +5,15 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this._handleLogout = this._handleLogout.bind(this);
+  }
+
   componentDidMount() {
     const { actions: { checkUserToken }, dispatch } = this.props;
     dispatch(checkUserToken());
-
-    this._handleLogout = this._handleLogout.bind(this);
   }
 
   componentDidUpdate(prevProps) {
