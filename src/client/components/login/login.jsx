@@ -13,7 +13,7 @@ class LogIn extends Component {
   componentDidUpdate() {
     const { actions: { resetLogin }, router, dispatch, logIn } = this.props;
     if (logIn.isSuccessful) {
-      router.push('/');
+      router.push('/dashboard');
       dispatch(resetLogin());
     }
   }
