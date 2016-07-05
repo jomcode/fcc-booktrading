@@ -17,7 +17,7 @@ class BookList extends Component {
       <BookListItem
         mode="browser"
         key={b.id}
-        title={b.volumeInfo.title}
+        title={b.title || b.volumeInfo.title}
         onSave={onSave.bind(null, userId, b)}
       />
     );

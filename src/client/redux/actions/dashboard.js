@@ -21,10 +21,9 @@ const resetGetOwnerBooks = () => ({
   type: ActionTypes.RESET_GET_OWNER_BOOKS
 });
 
-const getAllOwnerBooks = () => dispatch => {
+const getAllOwnerBooks = (query) => dispatch => {
   dispatch(getOwnerBooks());
-
-  feathers.getAllOwnerBooks()
+  feathers.getAllOwnerBooks(query)
     .then(r => {
       const books = r.map(b => Object.assign({}, {
         bookId: b._id,

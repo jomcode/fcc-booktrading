@@ -12,16 +12,22 @@ class BookBrowser extends Component {
   }
 
   _handleSearchSubmit(data) {
-    const { actions: { getBooksFromGoogle }, dispatch } = this.props;
+    const {
+      actions: { getBooksFromGoogle, getOtherUserBooks },
+      dispatch,
+      userId
+    } = this.props;
     if (!data.query || data.query.trim().length < 1) return;
     const filter = data.filter.slice();
     const query = data.query.slice();
 
-    if (filter === 'google') dispatch(getBooksFromGoogle({ query, filter }));
+    if (filter === 'google') dispatch(getBooksFromGoogle({ query }));
+    if (filter === 'users') dispatch(getOtherUserBooks({ userId }));
   }
 
   _handleBookSave(userId, book) {
     const { actions: { saveBookToUser }, dispatch } = this.props;
+    if (!book.title) return;
 
     const data = Object.assign({}, {
       googleId: book.id,

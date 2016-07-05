@@ -22,6 +22,22 @@ const bookSearch = (state = initialState, action) => {
       return Object.assign({}, initialState);
     }
 
+    case ActionTypes.GET_USER_BOOKS: {
+      return Object.assign({}, state, { isFetching: true });
+    }
+
+    case ActionTypes.GET_USER_BOOKS_SUCCESS: {
+      return Object.assign({}, state, { isFetching: false });
+    }
+
+    case ActionTypes.GET_USER_BOOKS_FAILURE: {
+      return Object.assign({}, state, { isFetching: false });
+    }
+
+    case ActionTypes.RESET_GET_USER_BOOKS: {
+      return Object.assign({}, initialState);
+    }
+
     default:
       return state;
   }

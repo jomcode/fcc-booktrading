@@ -13,8 +13,12 @@ const bookBrowser = (state = initialState, action) => {
       });
     }
 
-    case ActionTypes.SAVE_USER_BOOK_SUCCESS: {
-      // TODO filter the saved book
+    case ActionTypes.GET_USER_BOOKS_SUCCESS: {
+      const { books } = action.payload;
+      console.log('books', books);
+      return Object.assign({}, state, {
+        books
+      });
     }
 
     default:

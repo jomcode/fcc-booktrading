@@ -41,18 +41,23 @@ const editUserProfile = (id, data) => {
 };
 
 // Get books from google api
-const getGoogleBooks = (params) => {
+const getGoogleBooks = (query) => {
+  const params = Object.assign({}, { query });
   const googleBooksService = app.service('googlebooks');
   return googleBooksService.find(params);
 };
 
 // Get books from all users
 // TODO
-const getAllUserBooks = () => {};
+const getAllUserBooks = (query) => {
+  const params = Object.assign({}, { ownerId: { $ne: query } });
+  const bookService = app.service('books');
+  return bookService.find(params);
+};
 
 // Get books for owner (user's books)
-// TODO
-const getAllOwnerBooks = (params) => {
+const getAllOwnerBooks = (query) => {
+  const params = Object.assign({}, { query });
   const bookService = app.service('books');
   return bookService.find(params);
 };

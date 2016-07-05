@@ -65,3 +65,42 @@ const saveBookToUser = (data) => dispatch => {
 };
 
 export { saveBookToUser, resetSaveUserBook };
+
+/* Get all other user books */
+const getUserBooks = () => ({
+  type: ActionTypes.GET_USER_BOOKS
+});
+
+const getUserBooksSuccess = (books) => ({
+  type: ActionTypes.GET_USER_BOOKS_SUCCESS,
+  payload: {
+    books
+  }
+});
+
+const getUserBooksFailure = (error) => ({
+  type: ActionTypes.GET_USER_BOOKS_FAILURE
+});
+
+const resetGetUserBooks = () => ({
+  type: ActionTypes.RESET_GET_USER_BOOKS
+});
+
+const getOtherUserBooks = (query) => dispatch => {
+  dispatch(getUserBooks());
+
+  feathers.getAllUserBooks(query)
+    .then(r => {
+      if (!Array.isArray(r)) return;
+      const books = r.map(b => Object.assign({}, {
+        bookId: b._id,
+        googleId: b.googleId,
+        ownerId: b.ownerId,
+        title: b.title
+      }));
+      dispatch(getUserBooksSuccess(books));
+    })
+    .catch(e => dispatch(getUserBooksFailure(e)));
+};
+
+export { getOtherUserBooks, resetGetUserBooks };
