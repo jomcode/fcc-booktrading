@@ -6,14 +6,14 @@ import auth from './auth';
 import register from './register';
 import logIn from './login';
 import editProfile from './editprofile';
-import googleBooks from './googlebooks';
+import bookBrowser from './bookbrowser';
 
 const rootReducer = combineReducers({
   auth,
   register,
   logIn,
   editProfile,
-  googleBooks,
+  bookBrowser,
   routing: routerReducer,
   form: formReducer
 });

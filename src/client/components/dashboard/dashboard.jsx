@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router';
+import { withRouter, Link, IndexLink } from 'react-router';
 
 class Dashboard extends Component {
   componentWillMount() {
@@ -17,7 +17,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        dashboard.jsx
+        <IndexLink to="/">Browse Books</IndexLink>
         <Link to="/profile/edit">Edit Profile</Link>
       </div>
     );

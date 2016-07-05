@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import AppContainer from '../redux/containers/appcontainer';
-import Index from '../components/index/index';
+import IndexContainer from '../redux/containers/indexcontainer';
 import RegisterContainer from '../redux/containers/registercontainer';
 import LogInContainer from '../redux/containers/logincontainer';
 import DashboardContainer from '../redux/containers/dashboardcontainer';
@@ -10,7 +10,7 @@ import EditProfileContainer from '../redux/containers/editprofilecontainer';
 
 const routes = (
   <Route path="/" component={AppContainer}>
-    <IndexRoute component={Index} />
+    <IndexRoute component={IndexContainer} />
     <Route path="/register" component={RegisterContainer} />
     <Route path="/login" component={LogInContainer} />
     <Route path="/dashboard" component={DashboardContainer} />

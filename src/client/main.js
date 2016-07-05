@@ -15,12 +15,20 @@ const history = syncHistoryWithStore(hashHistory, store);
 
 const rootElement = document.getElementById('root');
 
+// TODO drop react-hot-loader when production
 render(
   <HotContainer>
     <Root store={store} history={history} />
   </HotContainer>,
   rootElement
 );
+
+if (process.env.NODE_ENV === 'production') {
+  render(
+    <Root store={store} history={history} />,
+    rootElement
+  );
+}
 
 if (module.hot) {
   module.hot.accept('./components/root/root', () => {
