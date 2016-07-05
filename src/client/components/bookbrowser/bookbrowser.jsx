@@ -11,10 +11,16 @@ class BookBrowser extends Component {
   }
 
   _handleSearchSubmit(data) {
-    console.log('_handleSearchSubmit', data);
+    const { actions: { getBooksFromGoogle }, dispatch } = this.props;
+    const filter = data.filter.slice();
+    const query = data.query.slice();
+
+    if (filter === 'google') dispatch(getBooksFromGoogle(query));
   }
 
   render() {
+    const { bookBrowser: { books, isFetching } } = this.props;
+
     return (
       <div>
         <SearchForm
@@ -22,7 +28,7 @@ class BookBrowser extends Component {
           initialValues={{ filter: 'google' }}
         />
 
-        <BookList />
+        <BookList books={books} isFetching={isFetching} />
       </div>
     );
   }

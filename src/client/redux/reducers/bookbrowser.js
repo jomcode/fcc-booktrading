@@ -12,7 +12,11 @@ const bookBrowser = (state = initialState, action) => {
     }
 
     case ActionTypes.GET_GOOGLE_BOOKS_SUCCESS: {
-      return Object.assign({}, state, { isFetching: false });
+      const { books } = action.payload;
+      return Object.assign({}, state, {
+        books,
+        isFetching: false
+      });
     }
 
     case ActionTypes.GET_GOOGLE_BOOKS_FAILURE: {

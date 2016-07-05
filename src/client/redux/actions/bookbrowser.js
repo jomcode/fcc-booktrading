@@ -26,8 +26,11 @@ const getBooksFromGoogle = () => dispatch => {
   dispatch(getGoogleBooks());
 
   feathers.getGoogleBooks()
-    .then(r => console.log(r))
-    .catch(e => console.error(e));
+    .then(r => {
+      const books = r.items.slice();
+      dispatch(getGoogleBooksSuccess(books));
+    })
+    .catch(e => dispatch(getGoogleBooksFailure(e)));
 };
 
-export { getBooksFromGoogle };
+export { getBooksFromGoogle, resetGetGoogleBooks };

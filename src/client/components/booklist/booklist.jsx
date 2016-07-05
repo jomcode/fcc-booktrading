@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 
 class BookList extends Component {
   render() {
+    const { books, isFetching } = this.props;
+
     return (
       <div>
-        booklist.jsx
+        {
+          books.length > 0 ?
+            books.map(b => <div>{b.volumeInfo.title}</div>) :
+            null
+        }
       </div>
     );
   }

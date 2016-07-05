@@ -42,8 +42,8 @@ const editUserProfile = (id, data) => {
 
 // Get books
 const getGoogleBooks = () => {
-  const googleBooks = app.service('googlebooks');
-  return googleBooks.find();
+  const bookService = app.service('books');
+  return bookService.find();
 };
 
 const service = {
