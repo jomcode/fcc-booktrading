@@ -8,18 +8,32 @@ class BookBrowser extends Component {
     super(props);
 
     this._handleSearchSubmit = this._handleSearchSubmit.bind(this);
+    this._handleBookSave = this._handleBookSave.bind(this);
   }
 
   _handleSearchSubmit(data) {
     const { actions: { getBooksFromGoogle }, dispatch } = this.props;
+    if (!data.query || data.query.trim().length < 1) return;
     const filter = data.filter.slice();
     const query = data.query.slice();
 
     if (filter === 'google') dispatch(getBooksFromGoogle({ query, filter }));
   }
 
+  _handleBookSave(userId, book) {
+    const { actions: { saveBookToUser }, dispatch } = this.props;
+
+    const data = Object.assign({}, {
+      googleId: book.id,
+      ownerId: userId,
+      title: book.volumeInfo.title
+    });
+
+    dispatch(saveBookToUser(data));
+  }
+
   render() {
-    const { bookBrowser: { books, isFetching } } = this.props;
+    const { bookBrowser: { books }, userId } = this.props;
 
     return (
       <div>
@@ -28,7 +42,7 @@ class BookBrowser extends Component {
           initialValues={{ filter: 'google' }}
         />
 
-        <BookList books={books} isFetching={isFetching} />
+        <BookList books={books} userId={userId} onSave={this._handleBookSave} />
       </div>
     );
   }

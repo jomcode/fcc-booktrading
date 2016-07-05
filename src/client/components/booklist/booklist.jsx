@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 
+import BookListItem from './booklistitem';
+
 class BookList extends Component {
   render() {
-    const { books, isFetching } = this.props;
+    const { books, userId, onSave } = this.props;
 
     return (
       <div>
         {
           books.length > 0 ?
-            books.map(b => <div key={b.id}>{b.volumeInfo.title}</div>) :
+            books.map(b =>
+              <BookListItem
+                key={b.id}
+                title={b.volumeInfo.title}
+                onSave={onSave.bind(null, userId, b)}
+              />
+            ) :
             null
         }
       </div>

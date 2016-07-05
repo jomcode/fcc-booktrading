@@ -7,6 +7,8 @@ import register from './register';
 import logIn from './login';
 import editProfile from './editprofile';
 import bookBrowser from './bookbrowser';
+import bookSearch from './booksearch';
+import saveBook from './savebook';
 
 const rootReducer = combineReducers({
   auth,
@@ -14,6 +16,8 @@ const rootReducer = combineReducers({
   logIn,
   editProfile,
   bookBrowser,
+  bookSearch,
+  saveBook,
   routing: routerReducer,
   form: formReducer
 });

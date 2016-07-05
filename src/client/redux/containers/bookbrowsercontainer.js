@@ -5,7 +5,10 @@ import * as actions from '../actions/bookbrowser';
 
 const mapStateToProps = state => ({
   bookBrowser: state.bookBrowser,
-  isAuthenticated: state.auth.isAuthenticated
+  bookSearch: state.bookSearch,
+  saveBook: state.saveBook,
+  isAuthenticated: state.auth.isAuthenticated,
+  userId: state.auth.user._id
 });
 
 const mapDispatchToProps = dispatch => ({

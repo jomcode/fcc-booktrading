@@ -42,8 +42,8 @@ const editUserProfile = (id, data) => {
 
 // Get books from google api
 const getGoogleBooks = (params) => {
-  const bookService = app.service('books');
-  return bookService.find(params);
+  const googleBooksService = app.service('googlebooks');
+  return googleBooksService.find(params);
 };
 
 // Get books from all users
@@ -54,6 +54,12 @@ const getAllUserBooks = () => {};
 // TODO
 const getAllOwnerBooks = () => {};
 
+// Save book to user
+const saveUserBook = (data) => {
+  const bookService = app.service('books');
+  return bookService.create(data);
+};
+
 const service = {
   createUser,
   logUserIn,
@@ -62,7 +68,8 @@ const service = {
   editUserProfile,
   getGoogleBooks,
   getAllUserBooks,
-  getAllOwnerBooks
+  getAllOwnerBooks,
+  saveUserBook
 };
 
 export default service;
