@@ -1,32 +1,17 @@
-'use strict';
+const service = require('feathers-mongoose');
+
+const TradeModel = require('./trademodel');
 const hooks = require('./hooks');
-
-class Service {
-  constructor(options) {
-    this.options = options || {};
-  }
-
-  setup(app) {
-    this.app = app;
-  }
-
-  // find(params) {}
-  // get(id, params) {}
-  // create(data, params) {}
-  // update(id, data, params) {}
-  // patch(id, data, params) {}
-  // remove(id, params) {}
-}
 
 module.exports = function initTrade() {
   const app = this;
 
-  app.use('/trade', new Service());
+  app.use('/trades', service({
+    Model: TradeModel
+  }));
 
-  const tradeService = app.service('/trade');
+  const tradeService = app.service('/trades');
 
   tradeService.before(hooks.before);
   tradeService.after(hooks.after);
 };
-
-module.exports.Service = Service;

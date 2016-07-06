@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SearchForm from './searchform';
-import BookList from '../booklist/booklist';
+import SearchResults from './searchresults';
 
 class BookBrowser extends Component {
   constructor(props) {
@@ -9,6 +9,7 @@ class BookBrowser extends Component {
 
     this._handleSearchSubmit = this._handleSearchSubmit.bind(this);
     this._handleBookSave = this._handleBookSave.bind(this);
+    this._handleBookTradeRequest = this._handleBookTradeRequest.bind(this);
   }
 
   _handleSearchSubmit(data) {
@@ -22,37 +23,58 @@ class BookBrowser extends Component {
     const query = data.query.slice();
 
     if (filter === 'google') dispatch(getBooksFromGoogle({ query }));
-    if (filter === 'users') dispatch(getOtherUserBooks({ userId }));
+    if (filter === 'users') dispatch(getOtherUserBooks(userId));
   }
 
   _handleBookSave(userId, book) {
-    const { actions: { saveBookToUser }, dispatch } = this.props;
-    if (!book.title) return;
+    const {
+      actions: { saveBookToUser },
+      bookBrowser: { searchFilter },
+      dispatch
+    } = this.props;
 
-    const data = Object.assign({}, {
-      googleId: book.id,
-      ownerId: userId,
-      title: book.volumeInfo.title
-    });
+    if (searchFilter !== 'google') return;
+
+    const data = Object.assign({}, book, { ownerId: userId });
 
     dispatch(saveBookToUser(data));
   }
 
+  _handleBookTradeRequest(userId, ownerId, bookId, bookTitle) {
+    const {
+      bookBrowser: { searchFilter },
+      actions: { sendTradeRequest },
+      dispatch
+    } = this.props;
+
+    if (searchFilter !== 'users') return;
+
+    const data = Object.assign({}, {
+      sentBy: userId,
+      receivedBy: ownerId,
+      bookId,
+      bookTitle
+    });
+
+    dispatch(sendTradeRequest(data));
+  }
+
   render() {
-    const { bookBrowser: { books }, userId } = this.props;
+    const { bookBrowser: { books, searchFilter }, userId } = this.props;
 
     return (
       <div>
         <SearchForm
           onSubmit={this._handleSearchSubmit}
-          initialValues={{ filter: 'google' }}
+          initialValues={{ filter: searchFilter }}
         />
 
-        <BookList
+        <SearchResults
           books={books}
           userId={userId}
           onSave={this._handleBookSave}
-          mode="browser"
+          onTradeRequest={this._handleBookTradeRequest}
+          searchFilter={searchFilter}
         />
       </div>
     );

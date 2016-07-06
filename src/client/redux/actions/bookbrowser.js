@@ -22,12 +22,15 @@ const resetGetGoogleBooks = () => ({
   type: ActionTypes.RESET_GET_GOOGLE_BOOKS
 });
 
-const getBooksFromGoogle = () => dispatch => {
+const getBooksFromGoogle = (query) => dispatch => {
   dispatch(getGoogleBooks());
 
-  feathers.getGoogleBooks()
+  feathers.getGoogleBooks(query)
     .then(r => {
-      const books = r.items.slice();
+      const books = r.items.map(b => Object.assign({}, {
+        googleId: b.id,
+        title: b.volumeInfo.title
+      }));
       dispatch(getGoogleBooksSuccess(books));
     })
     .catch(e => dispatch(getGoogleBooksFailure(e)));
@@ -89,7 +92,7 @@ const resetGetUserBooks = () => ({
 const getOtherUserBooks = (query) => dispatch => {
   dispatch(getUserBooks());
 
-  feathers.getAllUserBooks(query)
+  feathers.getOtherUserBooks(query)
     .then(r => {
       if (!Array.isArray(r)) return;
       const books = r.map(b => Object.assign({}, {
@@ -104,3 +107,36 @@ const getOtherUserBooks = (query) => dispatch => {
 };
 
 export { getOtherUserBooks, resetGetUserBooks };
+
+/* Send trade request for book */
+const tradeRequest = () => ({
+  type: ActionTypes.TRADE_REQUEST
+});
+
+const tradeRequestSuccess = (trade) => ({
+  type: ActionTypes.TRADE_REQUEST_SUCCESS,
+  payload: {
+    trade
+  }
+});
+
+const tradeRequestFailure = (error) => ({
+  type: ActionTypes.TRADE_REQUEST_FAILURE,
+  error
+});
+
+const resetTradeRequest = () => ({
+  type: ActionTypes.RESET_TRADE_REQUEST
+});
+
+const sendTradeRequest = data => dispatch => {
+  dispatch(tradeRequest());
+
+  feathers.createTradeRequest(data)
+    .then(r => {
+      dispatch(tradeRequestSuccess(r));
+    })
+    .catch(e => dispatch(tradeRequestFailure(e)));
+};
+
+export { sendTradeRequest, resetTradeRequest };

@@ -48,9 +48,10 @@ const getGoogleBooks = (query) => {
 };
 
 // Get books from all users
-// TODO
-const getAllUserBooks = (query) => {
-  const params = Object.assign({}, { ownerId: { $ne: query } });
+const getOtherUserBooks = (userId) => {
+  const params = Object.assign({}, {
+    query: { ownerId: { $ne: userId } }
+  });
   const bookService = app.service('books');
   return bookService.find(params);
 };
@@ -68,6 +69,24 @@ const saveUserBook = (data) => {
   return bookService.create(data);
 };
 
+// Send trade request
+const createTradeRequest = (data) => {
+  const tradeService = app.service('trades');
+  return tradeService.create(data);
+};
+
+// Get received trades
+const getReceivedTrades = (query) => {
+  const tradeService = app.service('trades');
+  const params = Object.assign({}, {
+    query: {
+      query
+    }
+  });
+
+  return tradeService.find(params);
+};
+
 const service = {
   createUser,
   logUserIn,
@@ -75,9 +94,11 @@ const service = {
   logout,
   editUserProfile,
   getGoogleBooks,
-  getAllUserBooks,
+  getOtherUserBooks,
   getAllOwnerBooks,
-  saveUserBook
+  saveUserBook,
+  createTradeRequest,
+  getReceivedTrades
 };
 
 export default service;
