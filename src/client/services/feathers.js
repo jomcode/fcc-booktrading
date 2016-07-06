@@ -76,7 +76,7 @@ const createTradeRequest = (data) => {
 };
 
 // Get received trades
-const getReceivedTrades = (query) => {
+const getReceivedTradeRequests = (query) => {
   const tradeService = app.service('trades');
   const params = Object.assign({}, {
     query: {
@@ -98,7 +98,7 @@ const service = {
   getAllOwnerBooks,
   saveUserBook,
   createTradeRequest,
-  getReceivedTrades
+  getReceivedTradeRequests
 };
 
 export default service;

@@ -2,8 +2,7 @@ import * as ActionTypes from '../constants';
 
 const initialState = {
   userBooks: [],
-  outgoingTrades: [],
-  incomingTrades: []
+  receivedTradeRequests: []
 };
 
 const dashboard = (state = initialState, action) => {
@@ -11,6 +10,13 @@ const dashboard = (state = initialState, action) => {
     case ActionTypes.GET_OWNER_BOOKS_SUCCESS: {
       const { books } = action.payload;
       return Object.assign({}, state, { userBooks: books.slice() });
+    }
+
+    case ActionTypes.GET_RECEIVED_TRADE_REQUESTS_SUCCESS: {
+      const { receivedTradeRequests } = action.payload;
+      return Object.assign({}, state, {
+        receivedTradeRequests: receivedTradeRequests.slice()
+      });
     }
 
     default:

@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 import { withRouter, Link, IndexLink } from 'react-router';
 
 import BookOverview from '../bookoverview/bookoverview';
+import TradeOverview from '../tradeoverview/tradeoverview';
 
 class Dashboard extends Component {
+  constructor(props) {
+    super(props);
+
+    this._handleTradeAccept = this._handleTradeAccept.bind(this);
+    this._handleTradeReject = this._handleTradeReject.bind(this);
+  }
+
   componentWillMount() {
     const { router, isAuthenticated } = this.props;
     if (!isAuthenticated) router.push('/');
@@ -11,20 +19,31 @@ class Dashboard extends Component {
 
   componentDidMount() {
     const {
-      actions: { getAllOwnerBooks },
+      actions: { getAllOwnerBooks, getAllReceivedTradeRequests },
       dispatch,
       isAuthenticated,
       userId
     } = this.props;
 
     if (isAuthenticated) {
-      // TODO fetch user data (pending trades, books, etc)
       dispatch(getAllOwnerBooks({ ownerId: userId }));
+      dispatch(getAllReceivedTradeRequests({
+        receivedBy: userId,
+        status: 'pending'
+      }));
     }
   }
 
+  _handleTradeAccept(trade) {
+    console.log('_handleTradeAccept', trade);
+  }
+
+  _handleTradeReject(trade) {
+    console.log('_handleTradeReject', trade);
+  }
+
   render() {
-    const { dashboard: { userBooks } } = this.props;
+    const { dashboard: { userBooks, receivedTradeRequests } } = this.props;
 
     return (
       <div>
@@ -32,6 +51,12 @@ class Dashboard extends Component {
         <Link to="/profile/edit">Edit Profile</Link>
 
         <BookOverview books={userBooks} />
+
+        <TradeOverview
+          receivedTradeRequests={receivedTradeRequests}
+          onAccept={this._handleTradeAccept}
+          onReject={this._handleTradeReject}
+        />
       </div>
     );
   }

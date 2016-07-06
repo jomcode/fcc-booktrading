@@ -7,6 +7,8 @@ class Header extends Component {
 
     return (
       <header>
+        <Link to="/">Add Books</Link>
+        <Link to="/trade">Trade Books</Link>
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/register">Register</Link>
         <Link to="/login">Log In</Link>
