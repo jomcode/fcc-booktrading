@@ -15,20 +15,28 @@ const TradeSchema = new Schema({
       type: String,
       required: true
     },
-    bookTitle: {
+    title: {
       type: String,
       required: true
     },
+    ownerId: {
+      type: String,
+      required: true
+    }
   },
   requestedBook: {
     bookId: {
       type: String,
       required: true
     },
-    bookTitle: {
+    title: {
       type: String,
       required: true
     },
+    ownerId: {
+      type: String,
+      required: true
+    }
   },
   status: {
     type: String,

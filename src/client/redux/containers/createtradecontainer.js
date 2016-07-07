@@ -7,8 +7,8 @@ import { getAllOwnerBooks } from '../actions/dashboard';
 const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated,
   userId: state.auth.user._id,
-  tradeManager: state.tradeManager,
-  userBooks: state.dashboard.userBooks
+  userBooks: state.dashboard.userBooks,
+  createTrade: state.createTrade
 });
 
 const mapDispatchToProps = dispatch => ({
