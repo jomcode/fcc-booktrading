@@ -72,3 +72,13 @@ const sendTradeRequest = data => dispatch => {
 };
 
 export { sendTradeRequest, resetTradeRequest };
+
+/* Set requested book for create trade */
+const setRequestedBook = (requestedBook) => ({
+  type: ActionTypes.SET_REQUESTED_BOOK,
+  payload: {
+    requestedBook
+  }
+});
+
+export { setRequestedBook };

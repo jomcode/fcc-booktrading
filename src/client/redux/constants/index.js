@@ -52,6 +52,9 @@ export const GET_USER_BOOKS_SUCCESS = 'GET_USER_BOOKS_SUCCESS';
 export const GET_USER_BOOKS_FAILURE = 'GET_USER_BOOKS_FAILURE';
 export const RESET_GET_USER_BOOKS = 'RESET_GET_USER_BOOKS';
 
+/* Set requested book for trade */
+export const SET_REQUESTED_BOOK = 'SET_REQUESTED_BOOK';
+
 /* Send book trade request */
 export const TRADE_REQUEST = 'TRADE_REQUEST';
 export const TRADE_REQUEST_SUCCESS = 'TRADE_REQUEST_SUCCESS';

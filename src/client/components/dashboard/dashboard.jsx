@@ -47,7 +47,6 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <IndexLink to="/">Browse Books</IndexLink>
         <Link to="/profile/edit">Edit Profile</Link>
 
         <BookOverview books={userBooks} />
