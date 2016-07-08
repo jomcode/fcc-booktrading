@@ -1,7 +1,8 @@
 import * as ActionTypes from '../constants';
 
 const initialState = {
-  isFetching: false
+  isFetching: false,
+  isSuccessful: false
 };
 
 const saveBook = (state = initialState, action) => {
@@ -11,7 +12,10 @@ const saveBook = (state = initialState, action) => {
     }
 
     case ActionTypes.SAVE_USER_BOOK_SUCCESS: {
-      return Object.assign({}, state, { isFetching: false });
+      return Object.assign({}, state, {
+        isFetching: false,
+        isSuccessful: true
+      });
     }
 
     case ActionTypes.SAVE_USER_BOOK_FAILURE: {

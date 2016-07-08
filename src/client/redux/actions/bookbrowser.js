@@ -43,10 +43,10 @@ const saveUserBook = () => ({
   type: ActionTypes.SAVE_USER_BOOK
 });
 
-const saveUserBookSuccess = (data) => ({
+const saveUserBookSuccess = (book) => ({
   type: ActionTypes.SAVE_USER_BOOK_SUCCESS,
   payload: {
-    data
+    book
   }
 });
 

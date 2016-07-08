@@ -9,6 +9,12 @@ class SearchResults extends Component {
     return (
       <div>
         {
+          books.length > 0 ?
+            <h2>Search Results</h2> :
+            <p>Enter a search query above to find books...</p>
+        }
+
+        {
           books.map(b =>
             <SearchResultItem
               key={b.googleId}

@@ -13,6 +13,12 @@ const bookBrowser = (state = initialState, action) => {
       });
     }
 
+    case ActionTypes.SAVE_USER_BOOK_SUCCESS: {
+      const { book } = action.payload;
+      const updatedBooks = state.books.filter(b => b.googleId !== book.googleId);
+      return Object.assign({}, state, { books: updatedBooks });
+    }
+
     default:
       return state;
   }

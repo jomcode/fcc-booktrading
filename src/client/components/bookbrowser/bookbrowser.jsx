@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 
 import SearchForm from './searchform';
 import SearchResults from './searchresults';
@@ -9,6 +10,20 @@ class BookBrowser extends Component {
 
     this._handleSearchSubmit = this._handleSearchSubmit.bind(this);
     this._handleBookSave = this._handleBookSave.bind(this);
+  }
+
+  componentDidUpdate() {
+    const {
+      actions: { resetSaveUserBook },
+      saveBook: { isSuccessful },
+      dispatch
+      // router
+    } = this.props;
+
+    if (isSuccessful) {
+      // router.push('/dashboard');
+      dispatch(resetSaveUserBook());
+    }
   }
 
   _handleSearchSubmit(data) {
@@ -37,7 +52,7 @@ class BookBrowser extends Component {
 
     return (
       <div>
-        <h1>Book Finder</h1>
+        <h1>Add Books</h1>
         <SearchForm
           onSubmit={this._handleSearchSubmit}
         />
@@ -51,5 +66,7 @@ class BookBrowser extends Component {
     );
   }
 }
+
+BookBrowser = withRouter(BookBrowser);
 
 export default BookBrowser;

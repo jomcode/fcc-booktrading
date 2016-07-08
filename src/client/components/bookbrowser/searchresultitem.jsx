@@ -6,8 +6,10 @@ class SearchResultItem extends Component {
 
     return (
       <div>
-        <p>{title}</p>
-        <button onClick={onSave}>add</button>
+        <p>
+          {title}
+          <button onClick={onSave}>add</button>
+        </p>
       </div>
     );
   }
