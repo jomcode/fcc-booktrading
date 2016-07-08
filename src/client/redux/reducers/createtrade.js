@@ -2,7 +2,7 @@ import * as ActionTypes from '../constants';
 
 const initialState = {
   requestedBook: {},
-  isCreated: false
+  isSuccessful: false
 };
 
 const createTrade = (state = initialState, action) => {
@@ -13,7 +13,7 @@ const createTrade = (state = initialState, action) => {
     }
 
     case ActionTypes.TRADE_REQUEST_SUCCESS: {
-      return Object.assign({}, state, { isCreated: true });
+      return Object.assign({}, state, { isSuccessful: true });
     }
 
     case ActionTypes.RESET_TRADE_REQUEST: {

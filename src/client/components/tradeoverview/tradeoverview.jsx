@@ -8,7 +8,12 @@ class TradeOverview extends Component {
 
     return (
       <div>
-        tradeoverview.jsx
+        {
+          receivedTradeRequests.length > 0 ?
+            <p>Received trade requests:</p> :
+            null
+        }
+
         {
           receivedTradeRequests.map(t =>
             <TradeOverViewItem

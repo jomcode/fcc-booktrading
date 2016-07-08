@@ -6,7 +6,14 @@ class BookOverview extends Component {
 
     return (
       <div>
-        bookoverview.jsx
+        <p>Your books:</p>
+        {
+          books.map(b =>
+            <div key={b.bookId}>
+              <p>{b.title}</p>
+            </div>
+          )
+        }
       </div>
     );
   }

@@ -14,8 +14,17 @@ class CreateTrade extends Component {
   }
 
   componentDidUpdate() {
-    const { createTrade: { isCreated }, router } = this.props;
-    if (isCreated) router.push('/trade');
+    const {
+      createTrade: { isSuccessful },
+      actions: { resetTradeRequest },
+      dispatch,
+      router
+    } = this.props;
+
+    if (isSuccessful) {
+      router.push('/trade');
+      dispatch(resetTradeRequest());
+    }
   }
 
   _handleTrade(data) {
