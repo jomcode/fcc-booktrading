@@ -3,7 +3,7 @@ if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 module.exports = {
   port: process.env.PORT || 3030,
   public: '../../../dist',
-  mongodb: process.env.DATABASE_URL || process.env.DEV_MONGO,
+  mongodb: process.env.MONGODB_URI || process.env.DEV_MONGO,
   auth: {
     idField: '_id',
     token: {
