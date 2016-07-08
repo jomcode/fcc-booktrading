@@ -56,10 +56,10 @@ const resetGetReceivedTradeRequests = () => ({
   type: ActionTypes.RESET_GET_RECEIVED_TRADE_REQUESTS
 });
 
-const getAllReceivedTradeRequests = userId => dispatch => {
+const getAllReceivedTradeRequests = query => dispatch => {
   dispatch(getReceivedTradeRequests());
 
-  feathers.getReceivedTradeRequests()
+  feathers.getReceivedTradeRequests(query)
     .then(r => {
       const requests = r.map(req => Object.assign({}, {
         tradeId: req._id,
@@ -74,3 +74,67 @@ const getAllReceivedTradeRequests = userId => dispatch => {
 };
 
 export { getAllReceivedTradeRequests, resetGetReceivedTradeRequests };
+
+const acceptTrade = () => ({
+  type: ActionTypes.ACCEPT_TRADE
+});
+
+const acceptTradeSuccess = (trade) => ({
+  type: ActionTypes.ACCEPT_TRADE_SUCCESS,
+  payload: {
+    trade
+  }
+});
+
+const acceptTradeFailure = (error) => ({
+  type: ActionTypes.ACCEPT_TRADE_FAILURE,
+  error
+});
+
+const resetAcceptTrade = () => ({
+  type: ActionTypes.RESET_ACCEPT_TRADE
+});
+
+const acceptTradeRequest = (tradeId) => dispatch => {
+  dispatch(acceptTrade());
+
+  feathers.acceptTrade(tradeId)
+    .then(r => {
+      dispatch(acceptTradeSuccess(r));
+    })
+    .catch(e => dispatch(acceptTradeFailure(e)));
+};
+
+export { acceptTradeRequest, resetAcceptTrade };
+
+const rejectTrade = () => ({
+  type: ActionTypes.REJECT_TRADE
+});
+
+const rejectTradeSuccess = (trade) => ({
+  type: ActionTypes.REJECT_TRADE_SUCCESS,
+  payload: {
+    trade
+  }
+});
+
+const rejectTradeFailure = (error) => ({
+  type: ActionTypes.REJECT_TRADE_FAILURE,
+  error
+});
+
+const resetRejectTrade = () => ({
+  type: ActionTypes.RESET_REJECT_TRADE
+});
+
+const rejectTradeRequest = (tradeId) => dispatch => {
+  dispatch(rejectTrade());
+
+  feathers.rejectTrade(tradeId)
+    .then(r => {
+      dispatch(rejectTradeSuccess(r));
+    })
+    .catch(e => dispatch(rejectTradeFailure(e)));
+};
+
+export { rejectTradeRequest, resetRejectTrade };

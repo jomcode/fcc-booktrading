@@ -6,7 +6,9 @@ import * as actions from '../actions/dashboard';
 const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated,
   userId: state.auth.user._id,
-  dashboard: state.dashboard
+  dashboard: state.dashboard,
+  acceptTrade: state.acceptTrade,
+  rejectTrade: state.rejectTrade
 });
 
 const mapDispatchToProps = dispatch => ({

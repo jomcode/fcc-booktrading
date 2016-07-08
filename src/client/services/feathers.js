@@ -78,13 +78,21 @@ const createTradeRequest = (data) => {
 // Get received trades
 const getReceivedTradeRequests = (query) => {
   const tradeService = app.service('trades');
-  const params = Object.assign({}, {
-    query: {
-      query
-    }
-  });
+  const params = Object.assign({}, { query });
 
   return tradeService.find(params);
+};
+
+// Accept a trade
+const acceptTrade = (tradeId) => {
+  const tradeService = app.service('trades');
+  return tradeService.patch(tradeId, { status: 'accepted' });
+};
+
+// Reject a trade
+const rejectTrade = (tradeId) => {
+  const tradeService = app.service('trades');
+  return tradeService.patch(tradeId, { status: 'rejected' });
 };
 
 const service = {
@@ -98,7 +106,9 @@ const service = {
   getAllOwnerBooks,
   saveUserBook,
   createTradeRequest,
-  getReceivedTradeRequests
+  getReceivedTradeRequests,
+  acceptTrade,
+  rejectTrade
 };
 
 export default service;

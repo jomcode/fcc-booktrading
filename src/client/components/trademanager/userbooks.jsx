@@ -9,7 +9,7 @@ class UserBooks extends Component {
         userbooks.jsx
         {
           otherUserBooks.map(b =>
-            <div>
+            <div key={b.bookId}>
               <p>{b.title}</p>
               <button onClick={onTradeRequest.bind(null, b)}>Request Trade</button>
             </div>

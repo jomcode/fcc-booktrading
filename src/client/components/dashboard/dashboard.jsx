@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Link, IndexLink } from 'react-router';
+import { withRouter, Link } from 'react-router';
 
 import BookOverview from '../bookoverview/bookoverview';
 import TradeOverview from '../tradeoverview/tradeoverview';
@@ -34,12 +34,46 @@ class Dashboard extends Component {
     }
   }
 
+  componentDidUpdate() {
+    const {
+      actions: {
+        getAllOwnerBooks,
+        getAllReceivedTradeRequests,
+        resetAcceptTrade,
+        resetRejectTrade
+      },
+      userId,
+      dispatch,
+      acceptTrade,
+      rejectTrade
+    } = this.props;
+
+    if (acceptTrade.isSuccessful || rejectTrade.isSuccessful) {
+      dispatch(getAllOwnerBooks({ ownerId: userId }));
+      dispatch(getAllReceivedTradeRequests({
+        receivedBy: userId,
+        status: 'pending'
+      }));
+
+      dispatch(resetAcceptTrade());
+      dispatch(resetRejectTrade());
+    }
+  }
+
   _handleTradeAccept(trade) {
-    console.log('_handleTradeAccept', trade);
+    const { actions: { acceptTradeRequest }, dispatch } = this.props;
+
+    const tradeId = trade.tradeId.slice();
+
+    dispatch(acceptTradeRequest(tradeId));
   }
 
   _handleTradeReject(trade) {
-    console.log('_handleTradeReject', trade);
+    const { actions: { rejectTradeRequest }, dispatch } = this.props;
+
+    const tradeId = trade.tradeId.slice();
+
+    dispatch(rejectTradeRequest(tradeId));
   }
 
   render() {

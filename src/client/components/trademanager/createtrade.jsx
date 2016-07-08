@@ -47,7 +47,7 @@ class CreateTrade extends Component {
         <p>choose one of your books to offer:</p>
         {
           userBooks.map(b =>
-            <div>
+            <div key={b.bookId}>
               <p>{b.title}</p>
               <button onClick={this._handleTrade.bind(null, b)}>Send Trade Offer</button>
             </div>
