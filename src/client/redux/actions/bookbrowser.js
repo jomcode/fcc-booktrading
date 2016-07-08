@@ -27,10 +27,7 @@ const getBooksFromGoogle = (query) => dispatch => {
 
   feathers.getGoogleBooks(query)
     .then(r => {
-      const books = r.items.map(b => Object.assign({}, {
-        googleId: b.id,
-        title: b.volumeInfo.title
-      }));
+      const books = r.slice();
       dispatch(getGoogleBooksSuccess(books));
     })
     .catch(e => dispatch(getGoogleBooksFailure(e)));

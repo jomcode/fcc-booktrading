@@ -1,5 +1,5 @@
 'use strict';
-// const got = require('got');
+const got = require('got');
 
 const hooks = require('./hooks');
 
@@ -12,11 +12,9 @@ class Service {
     this.app = app;
   }
 
-  // params - query and filter(google or users)
   find(params) {
-    /* working - using mock data for development
     const rootUrl = 'https://www.googleapis.com/books/v1/volumes';
-    const query = `q=${params.query.searchQuery}`;
+    const query = `q=${params.query.query}`;
     const constraints = 'maxResults=40&orderBy=relevance&printType=books';
     const fields = 'fields=items(id%2CselfLink%2CvolumeInfo(authors%2C' +
       'categories%2Cdescription%2CimageLinks%2CmainCategory%2CpageCount%2C' +
@@ -27,10 +25,18 @@ class Service {
 
     return got(target)
       .then(response => response.body)
-      .then(data => data)
-      .catch(error => console.error('googleBooks #find error', error));
-    */
-    return Promise.resolve(require('./mockdata.json'));
+      .then(data => {
+        const parsed = JSON.parse(data);
+        const formatted = parsed.items.map(b => Object.assign({}, {
+          googleId: b.id,
+          title: b.volumeInfo.title
+        }));
+
+        return formatted;
+      })
+      .catch(error => error);
+
+    // return Promise.resolve(require('./mockdata.json'));
   }
 
   // get(id, params) {}
