@@ -81,6 +81,7 @@ class Dashboard extends Component {
 
     return (
       <div>
+        <h1>Dashboard</h1>
         <Link to="/profile/edit">Edit Profile</Link>
 
         <BookOverview books={userBooks} />

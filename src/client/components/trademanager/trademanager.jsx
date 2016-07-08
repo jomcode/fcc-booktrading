@@ -26,7 +26,7 @@ class TradeManager extends Component {
 
     return (
       <div>
-        trademanager.jsx
+        <h1>Trade Manager</h1>
         <UserBooks
           otherUserBooks={otherUserBooks}
           onTradeRequest={this._handleCreateTrade}

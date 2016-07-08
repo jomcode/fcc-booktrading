@@ -4,7 +4,9 @@ class Welcome extends Component {
   render() {
     return (
       <div>
-        welcome.jsx
+        <p>
+          Welcome to the book trading club. Register and log in to participate.
+        </p>
       </div>
     );
   }

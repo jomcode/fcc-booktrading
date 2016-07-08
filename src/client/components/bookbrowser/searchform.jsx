@@ -8,8 +8,8 @@ class SearchForm extends Component {
       <form onSubmit={handleSubmit}>
         <div>
           <input type="text" placeholder="Search..." {...query} />
+          <button type="submit">Search</button>
         </div>
-        <button type="submit">Search</button>
       </form>
     );
   }

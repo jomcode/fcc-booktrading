@@ -6,12 +6,14 @@ class UserBooks extends Component {
 
     return (
       <div>
-        userbooks.jsx
+        <h2>Other User's Books</h2>
         {
           otherUserBooks.map(b =>
             <div key={b.bookId}>
-              <p>{b.title}</p>
-              <button onClick={onTradeRequest.bind(null, b)}>Request Trade</button>
+              <p>
+                {b.title}
+                <button onClick={onTradeRequest.bind(null, b)}>Request Trade</button>
+              </p>
             </div>
           )
         }

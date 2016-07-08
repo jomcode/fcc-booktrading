@@ -52,8 +52,8 @@ class CreateTrade extends Component {
 
     return (
       <div>
-        createtrade.jsx
-        <p>choose one of your books to offer:</p>
+        <h2>Create Trade</h2>
+        <p>Choose one of your books to offer:</p>
         {
           userBooks.map(b =>
             <div key={b.bookId}>

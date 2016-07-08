@@ -37,6 +37,7 @@ class BookBrowser extends Component {
 
     return (
       <div>
+        <h1>Book Finder</h1>
         <SearchForm
           onSubmit={this._handleSearchSubmit}
         />

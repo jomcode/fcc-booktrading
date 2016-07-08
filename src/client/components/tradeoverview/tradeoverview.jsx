@@ -10,7 +10,7 @@ class TradeOverview extends Component {
       <div>
         {
           receivedTradeRequests.length > 0 ?
-            <p>Received trade requests:</p> :
+            <h2>Received trade requests</h2> :
             null
         }
 
