@@ -12,7 +12,7 @@
     "dev:client:hot": "better-npm-run dev:client:hot",
     "dev:hot": "better-npm-run dev:hot",
     "build:client": "better-npm-run build:client",
-    "heroku-postbuild": "build:client"
+    "heroku-postbuild": "npm run build:client"
   },
   "betterScripts": {
     "dev:server": {
