@@ -1,6 +1,8 @@
+const path = require('path');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const commonConfig = require('./webpack.common');
 const helpers = require('./helpers');
@@ -14,6 +16,17 @@ module.exports = webpackMerge(commonConfig, {
     sourceMapFilename: '[name].[hash].map',
     chunkFilename: '[name].[id].chunk.js'
   },
+  module: {
+    loaders: [
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style', 'css!postcss!sass'),
+        include: [
+          path.join(helpers.sourceDir)
+        ]
+      }
+    ]
+  },
   plugins: [
     new CleanWebpackPlugin(['!dist/.gitkeep', 'dist/**/*.*'], {
       verbose: true,
@@ -25,7 +38,8 @@ module.exports = webpackMerge(commonConfig, {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV)
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } })
+    new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }),
+    new ExtractTextPlugin('[name].[hash].css')
   ],
   node: {
     global: 'window',
