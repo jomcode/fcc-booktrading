@@ -2,6 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 import rootReducer from '../reducers';
+import notificationMiddleware from '../middleware/notification';
 
 export default function configureStore(initialState) {
   // TODO only add devtools extension when NODE_ENV === 'development'
@@ -9,7 +10,7 @@ export default function configureStore(initialState) {
     rootReducer,
     initialState,
     compose(
-      applyMiddleware(thunk),
+      applyMiddleware(thunk, notificationMiddleware),
       window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   );

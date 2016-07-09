@@ -14,6 +14,7 @@ import tradeManager from './trademanager';
 import createTrade from './createtrade';
 import acceptTrade from './accepttrade';
 import rejectTrade from './rejecttrade';
+import notification from './notification';
 
 const rootReducer = combineReducers({
   auth,
@@ -28,6 +29,7 @@ const rootReducer = combineReducers({
   createTrade,
   acceptTrade,
   rejectTrade,
+  notification,
   routing: routerReducer,
   form: formReducer
 });
